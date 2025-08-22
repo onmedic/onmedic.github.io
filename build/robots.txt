@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://onmedic.com/sitemap.xml
+
+# Bloquejats
+Disallow: /src/
+Disallow: /config/
+Disallow: *.tmp
+Disallow: /temp/
+Disallow: /private/
+
+# Crawling optimitzat
+Crawl-delay: 1
+
+# Informació contacte
+# Contact: contact@onmedic.com

@@ -1,0 +1,16 @@
+# Redirects per OnMedic
+
+# Redirect www a domini principal
+https://www.onmedic.com/*  https://onmedic.com/:splat  301!
+
+# Redirect HTTP a HTTPS 
+http://onmedic.com/*  https://onmedic.com/:splat  301!
+http://www.onmedic.com/*  https://onmedic.com/:splat  301!
+
+# Futures redirects per compatibilitat
+# /services  /  200
+# /about     /#about  200  
+# /contact   /#contact  200
+
+# 404 custom page (si es crea)
+# /*  /404.html  404
