@@ -8,9 +8,15 @@ const DYNAMIC_CACHE = 'onmedic-dynamic-v2.0.0-ULTRAFIX';
 // Recursos per cachear immediatament (SENSE index.html per evitar problemes)
 const urlsToCache = [
     '/src/styles/main.css',
+    '/src/styles/main.min.css',
+    '/src/styles/contact.css',
+    '/src/styles/contact.min.css',
     '/src/scripts/main.js',
+    '/src/scripts/main.min.js',
     '/src/scripts/animations.js',
+    '/src/scripts/animations.min.js',
     '/src/assets/images/logo-onmedic.jpg',
+    '/src/assets/images/logo-onmedic.webp',
     'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap'
 ];
 

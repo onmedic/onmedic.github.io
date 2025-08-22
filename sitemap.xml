@@ -4,7 +4,7 @@
     
     <url>
         <loc>https://onmedic.com/</loc>
-        <lastmod>2024-08-22</lastmod>
+        <lastmod>2025-08-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
         
@@ -13,6 +13,19 @@
         <xhtml:link rel="alternate" hreflang="es" href="https://onmedic.com/es/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://onmedic.com/en/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://onmedic.com/"/>
+    </url>
+    
+    <url>
+        <loc>https://onmedic.com/contacte.html</loc>
+        <lastmod>2025-08-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        
+        <!-- Futures versions multiidioma -->
+        <xhtml:link rel="alternate" hreflang="ca" href="https://onmedic.com/contacte.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://onmedic.com/es/contacte.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://onmedic.com/en/contact.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://onmedic.com/contacte.html"/>
     </url>
     
     <!-- Futures pàgines -->
