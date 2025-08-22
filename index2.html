@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ca" dir="ltr">
+<head>
+    <!-- Meta bàsics -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Core -->
+    <title>OnMedic TEST - 6 Cards</title>
+    <meta name="description" content="OnMedic Test Page - 6 Cards d'Expertesa">
+    
+    <style>
+        /* Reset i variables */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --color-primary: #0A2342;
+            --color-accent: #00D4FF;
+            --color-background: #F8F9FD;
+            --color-white: #ffffff;
+            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --gradient-hero: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+            --shadow-card: 0 10px 40px rgba(10, 35, 66, 0.1);
+            --border-radius: 12px;
+        }
+        
+        body {
+            font-family: var(--font-body);
+            font-size: 16px;
+            line-height: 1.6;
+            color: #1A1A2E;
+            background-color: var(--color-background);
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        /* Header simple */
+        .header {
+            background: var(--color-primary);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        /* Section */
+        .expertise {
+            padding: 4rem 0;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+        }
+        
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        /* GRID PRINCIPAL */
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        @media (min-width: 1200px) {
+            .expertise-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .expertise-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+        
+        /* CARDS */
+        .expertise-card {
+            background: var(--color-white);
+            padding: 2.5rem 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-card);
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(10, 35, 66, 0.05);
+            position: relative;
+            
+            /* DEBUG: Border vermell per veure totes les cards */
+            outline: 3px solid red;
+        }
+        
+        .expertise-card::before {
+            content: "CARD " attr(data-card-number);
+            position: absolute;
+            top: -15px;
+            left: 15px;
+            background: red;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            z-index: 10;
+        }
+        
+        .expertise-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 60px rgba(10, 35, 66, 0.15);
+        }
+        
+        .expertise-icon {
+            color: var(--color-accent);
+            margin-bottom: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .expertise-card h3 {
+            color: var(--color-primary);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        
+        .expertise-card p {
+            color: #666;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        
+        /* Debug info */
+        .debug-info {
+            background: #000;
+            color: #00ff00;
+            padding: 2rem;
+            margin: 3rem 0;
+            border-radius: 10px;
+            font-family: monospace;
+            text-align: center;
+        }
+        
+        .debug-info h3 {
+            color: #ff0000;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="container">
+            <h1>🧪 OnMedic TEST - INDEX2</h1>
+            <p>Test dedicat per verificar que les 6 cards funcionen</p>
+        </div>
+    </div>
+
+    <!-- Àrees d'Expertesa TEST -->
+    <section class="expertise" id="expertise">
+        <div class="container">
+            <div class="section-header">
+                <h2>Àrees d'Expertesa</h2>
+                <p class="section-subtitle">
+                    Solucions tecnològiques especialitzades per cada àmbit del sector salut
+                </p>
+            </div>
+            
+            <div class="expertise-grid">
+                <div class="expertise-card" data-card-number="1">
+                    <div class="expertise-icon">
+                        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 3v5h5"/>
+                            <path d="M21 21v-5h-5"/>
+                            <path d="M7 17l4-4 4 4"/>
+                            <path d="M17 7l-4 4-4-4"/>
+                        </svg>
+                    </div>
+                    <h3>Analítica Avançada en Salut</h3>
+                    <p>Big Data i machine learning per predicció de riscos i optimització operacional al sector sanitari.</p>
+                </div>
+
+                <div class="expertise-card" data-card-number="2">
+                    <div class="expertise-icon">
+                        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="M9 12l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <h3>Ciberseguretat Sanitària</h3>
+                    <p>Protecció de dades sanitàries, compliment normatiu GDPR/HIPAA i auditories de seguretat especialitzades.</p>
+                </div>
+
+                <div class="expertise-card" data-card-number="3">
+                    <div class="expertise-icon">
+                        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                        </svg>
+                    </div>
+                    <h3>Transformació Digital</h3>
+                    <p>Modernització d'infraestructures sanitàries, migració al núvol i implementació de workflows digitals.</p>
+                </div>
+
+                <div class="expertise-card" data-card-number="4">
+                    <div class="expertise-icon">
+                        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                            <polyline points="9,22 9,12 15,12 15,22"/>
+                        </svg>
+                    </div>
+                    <h3>Solucions Hospitalàries</h3>
+                    <p>Sistemes de gestió hospitalària, optimització de recursos sanitaris i plataformes de comunicació interna.</p>
+                </div>
+
+                <div class="expertise-card" data-card-number="5">
+                    <div class="expertise-icon">
+                        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                            <path d="M13 9h2l2 2-2 2h-2"/>
+                            <path d="M11 9H9L7 11l2 2h2"/>
+                        </svg>
+                    </div>
+                    <h3>Anàlisi de Xarxes Socials</h3>
+                    <p>Som especialistes en Bluesky i YouTube. Desenvolupem solucions d'anàlisi i gestió de continguts per aquestes plataformes.</p>
+                </div>
+
+                <div class="expertise-card" data-card-number="6">
+                    <div class="expertise-icon">
+                        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                            <circle cx="7" cy="8" r="1"/>
+                            <circle cx="17" cy="8" r="1"/>
+                        </svg>
+                    </div>
+                    <h3>Desenvolupament Multiplataforma</h3>
+                    <p>Aplicacions natives i híbrides per iOS i Android. Solucions escalables per webs, mòbils i tauletes.</p>
+                </div>
+            </div>
+            
+            <!-- Debug Info -->
+            <div class="debug-info">
+                <h3>🔍 DEBUG INFO</h3>
+                <div id="debug-results"></div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Debug script sense dependències
+        console.log("INDEX2 TEST - Loading...");
+        
+        function checkCards() {
+            const cards = document.querySelectorAll('.expertise-card');
+            const debugDiv = document.getElementById('debug-results');
+            
+            console.log("Cards found:", cards.length);
+            
+            let debugHTML = `
+                <p>📊 CARDS TROBADES: <strong style="color: ${cards.length === 6 ? '#00ff00' : '#ff0000'}">${cards.length}/6</strong></p>
+                <p>🖥️ VIEWPORT: ${window.innerWidth}x${window.innerHeight}</p>
+                <p>📱 USER AGENT: ${navigator.userAgent.slice(0, 50)}...</p>
+                <p>⏰ TIMESTAMP: ${new Date().toISOString()}</p>
+                <br>
+            `;
+            
+            if (cards.length === 6) {
+                debugHTML += '<p style="color: #00ff00">✅ ÈXIT! Totes les 6 cards es mostren correctament!</p>';
+                
+                cards.forEach((card, i) => {
+                    const title = card.querySelector('h3').textContent;
+                    debugHTML += `<p>Card ${i+1}: ${title}</p>`;
+                });
+            } else {
+                debugHTML += '<p style="color: #ff0000">❌ ERROR! No es mostren totes les 6 cards!</p>';
+                debugHTML += `<p>Això confirmaria que el problema NO és cache, sinó CSS/HTML/JS</p>`;
+            }
+            
+            debugDiv.innerHTML = debugHTML;
+        }
+        
+        // Check immediatament i després cada segon
+        document.addEventListener('DOMContentLoaded', checkCards);
+        window.addEventListener('load', checkCards);
+        setTimeout(checkCards, 1000);
+        setTimeout(checkCards, 2000);
+        
+        // Log adicional
+        console.log("INDEX2: DOMContentLoaded event registered");
+        
+        // Verificació CSS Grid
+        window.addEventListener('load', () => {
+            const grid = document.querySelector('.expertise-grid');
+            const computedStyle = window.getComputedStyle(grid);
+            console.log("CSS Grid computed:", {
+                display: computedStyle.display,
+                gridTemplateColumns: computedStyle.gridTemplateColumns,
+                gap: computedStyle.gap
+            });
+        });
+    </script>
+</body>
+</html>

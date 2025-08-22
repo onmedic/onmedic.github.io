@@ -1,9 +1,9 @@
 // onmedic Service Worker
 // Cache strategy per millor performance
 
-const CACHE_NAME = 'onmedic-v1.0.1';
-const STATIC_CACHE = 'onmedic-static-v1.0.1';
-const DYNAMIC_CACHE = 'onmedic-dynamic-v1.0.1';
+const CACHE_NAME = 'onmedic-v2.0.0-ULTRAFIX';
+const STATIC_CACHE = 'onmedic-static-v2.0.0-ULTRAFIX';
+const DYNAMIC_CACHE = 'onmedic-dynamic-v2.0.0-ULTRAFIX';
 
 // Recursos per cachear immediatament (SENSE index.html per evitar problemes)
 const urlsToCache = [
@@ -31,23 +31,33 @@ self.addEventListener('install', event => {
     );
 });
 
-// Activate event - neteja caches antics
+// Activate event - neteja caches antics (ULTRAFIX - clear tot)
 self.addEventListener('activate', event => {
-    console.log('Service Worker: Activating...');
+    console.log('Service Worker: Activating ULTRAFIX v2.0.0...');
     
     event.waitUntil(
         caches.keys().then(cacheNames => {
+            console.log('Service Worker: Found caches:', cacheNames);
             return Promise.all(
                 cacheNames.map(cacheName => {
+                    // ULTRAFIX: Eliminar TOTA cache anterior per forçar actualització
                     if (cacheName !== STATIC_CACHE && cacheName !== DYNAMIC_CACHE) {
-                        console.log('Service Worker: Deleting old cache:', cacheName);
+                        console.log('Service Worker: ULTRAFIX - Deleting old cache:', cacheName);
                         return caches.delete(cacheName);
                     }
                 })
             );
         }).then(() => {
-            console.log('Service Worker: Claiming clients');
+            console.log('Service Worker: ULTRAFIX - Force claiming all clients');
             return self.clients.claim();
+        }).then(() => {
+            // ULTRAFIX: Force reload de totes les tabs obertes
+            return self.clients.matchAll().then(clients => {
+                clients.forEach(client => {
+                    console.log('Service Worker: ULTRAFIX - Sending reload to client');
+                    client.postMessage({ type: 'CACHE_UPDATED', action: 'reload' });
+                });
+            });
         })
     );
 });

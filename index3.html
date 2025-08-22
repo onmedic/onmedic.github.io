@@ -98,7 +98,7 @@
         }
     </style>
     
-    <!-- CSS Principal (no crític) carregat asíncronament -->
+    <!-- CSS no crític carregat asíncronament -->
     <link rel="preload" href="/src/styles/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/src/styles/main.css"></noscript>
     
@@ -308,213 +308,33 @@
         </div>
     </section>
 
-
-    <!-- Sectors -->
-    <section class="sectors" id="sectors">
-        <div class="container">
-            <div class="section-header">
-                <h2>Els Nostres Sectors</h2>
-                <p class="section-subtitle">
-                    Especialitzats en les àrees més crítiques del sistema sanitari global
-                </p>
-            </div>
+    <!-- DEBUG SENSE SERVICE WORKER -->
+    <script>
+        // SIMPLES FUNCIONS DEBUG SENSE SERVICE WORKER
+        console.log('INDEX3 TEST: Page loaded');
+        
+        function checkCardsIndex3() {
+            const cards = document.querySelectorAll('.expertise-card');
+            console.log('INDEX3: Cards found:', cards.length);
             
-            <div class="sectors-grid">
-                <div class="sector-card" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="sector-image">
-                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-                            <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
-                            <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/>
-                            <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/>
-                            <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/>
-                        </svg>
-                    </div>
-                    <h3>Indústria Farmacèutica</h3>
-                    <p>
-                        Desenvolupament de fàrmacs accelerat amb IA, plataformes d'assaigs clínics, 
-                        modelatge molecular i optimització de processos de descobriment.
-                    </p>
-                </div>
-                
-                <div class="sector-card" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="sector-image">
-                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                            <polyline points="9,22 9,12 15,12 15,22"/>
-                            <circle cx="12" cy="8" r="2"/>
-                        </svg>
-                    </div>
-                    <h3>Hospitals i Clíniques</h3>
-                    <p>
-                        Sistemes de gestió hospitalària intel·ligents, diagnòstic assistit, 
-                        optimització de recursos i millora de l'experiència del pacient.
-                    </p>
-                </div>
-                
-                <div class="sector-card" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="sector-image">
-                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                            <circle cx="9" cy="7" r="4"/>
-                            <path d="m16 11 2 2 4-4"/>
-                        </svg>
-                    </div>
-                    <h3>Sanitat Pública i Privada</h3>
-                    <p>
-                        Transformació digital d'institucions sanitàries, plataformes de salut pública, 
-                        telemedicina i sistemes de vigilància epidemiològica.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="cta" id="contact">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Parlem del Vostre Projecte</h2>
-                <p>
-                    Teniu un repte tecnològic en salut? Som aquí per transformar les vostres idees 
-                    en solucions reals que generin impacte positiu.
-                </p>
-                
-                <form class="contact-form" action="https://formspree.io/f/xbljnqwl" method="POST">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="name">Nom complet</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email professional</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="company">Empresa/Organització</label>
-                        <input type="text" id="company" name="company">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message">Expliqueu-nos el vostre projecte</label>
-                        <textarea id="message" name="message" rows="5" required placeholder="Descriviu breument el vostre repte tecnològic i com podem ajudar-vos..."></textarea>
-                    </div>
-                    
-                    <button type="submit" class="btn-primary btn-large">
-                        <span>Començar Conversa</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <line x1="5" y1="12" x2="19" y2="12"/>
-                            <polyline points="12,5 19,12 12,19"/>
-                        </svg>
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-main">
-                    <h3 class="footer-logo">onmedic</h3>
-                    <p class="footer-tagline">Building eHealth</p>
-                    <p class="footer-description">
-                        Transformem la salut amb tecnologia intel·ligent per construir 
-                        un futur més saludable per a tothom.
-                    </p>
-                </div>
-                
-                <div class="footer-links">
-                    <div class="footer-section">
-                        <h4>Contacte</h4>
-                        <p>contact@onmedic.com</p>
-                    </div>
-                    <div class="footer-section">
-                        <h4>Sectors</h4>
-                        <ul>
-                            <li>Farmacèutiques</li>
-                            <li>Hospitals</li>
-                            <li>Sanitat Pública</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2024 onmedic. Tots els drets reservats. | <a href="#privacy">Política de Privacitat</a></p>
-            </div>
-        </div>
-    </footer>
-
+            if (cards.length !== 6) {
+                console.error('INDEX3 ERROR: Only', cards.length, 'cards found instead of 6');
+                // Afegir alerta visual
+                document.body.style.border = '10px solid red';
+            } else {
+                console.log('INDEX3 SUCCESS: All 6 cards found!');
+                document.body.style.border = '10px solid green';
+            }
+        }
+        
+        // Check després de DOM load
+        document.addEventListener('DOMContentLoaded', checkCardsIndex3);
+        window.addEventListener('load', checkCardsIndex3);
+        setTimeout(checkCardsIndex3, 2000);
+    </script>
+    
     <!-- Scripts no bloquejants -->
     <script defer src="/src/scripts/main.js"></script>
     <script defer src="/src/scripts/animations.js"></script>
-    
-    <!-- Service Worker Registration ULTRAFIX -->
-    <script>
-        if ('serviceWorker' in navigator) {
-            // ULTRAFIX: Listen for messages from Service Worker
-            navigator.serviceWorker.addEventListener('message', function(event) {
-                console.log('ULTRAFIX: Message from SW:', event.data);
-                if (event.data && event.data.type === 'CACHE_UPDATED' && event.data.action === 'reload') {
-                    console.log('ULTRAFIX: Force reload due to cache update');
-                    window.location.reload(true);
-                }
-            });
-            
-            window.addEventListener('load', function() {
-                navigator.serviceWorker.register('/sw.js')
-                    .then(function(registration) {
-                        console.log('ULTRAFIX: SW registered: ', registration);
-                        
-                        // ULTRAFIX: Force update check
-                        registration.addEventListener('updatefound', () => {
-                            console.log('ULTRAFIX: SW update found, installing...');
-                        });
-                        
-                        // ULTRAFIX: Check for updates every 30 seconds
-                        setInterval(() => {
-                            console.log('ULTRAFIX: Checking for SW updates...');
-                            registration.update();
-                        }, 30000);
-                    })
-                    .catch(function(registrationError) {
-                        console.log('ULTRAFIX: SW registration failed: ', registrationError);
-                    });
-            });
-        }
-        
-        // ULTRAFIX: Add timestamp to avoid cache issues
-        console.log('ULTRAFIX: Page loaded at:', new Date().toISOString());
-        console.log('ULTRAFIX: Cards should be:', 6);
-        
-        // ULTRAFIX: Check cards after DOM load
-        document.addEventListener('DOMContentLoaded', function() {
-            setTimeout(() => {
-                const cards = document.querySelectorAll('.expertise-card');
-                console.log('ULTRAFIX: Found cards:', cards.length);
-                if (cards.length !== 6) {
-                    console.error('ULTRAFIX: ERROR - Only found', cards.length, 'cards instead of 6!');
-                    // Force hard reload if cards missing
-                    setTimeout(() => {
-                        console.log('ULTRAFIX: Force hard reload due to missing cards');
-                        window.location.reload(true);
-                    }, 3000);
-                }
-            }, 1000);
-        });
-    </script>
-    
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'GA_MEASUREMENT_ID', {
-            anonymize_ip: true,
-            cookie_expires: 63072000
-        });
-    </script>
+</body>
+</html>
