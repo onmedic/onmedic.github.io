@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initFormHandling();
     initPerformanceOptimizations();
     initAccessibility();
+    initLanguageTracking();
 });
 
 /**
@@ -35,7 +36,9 @@ function initSmoothScroll() {
                 });
                 
                 // Track navigation clicks
-                if (typeof gtag !== 'undefined') {
+                if (window.onMedicAnalytics) {
+                    window.onMedicAnalytics.trackNavigation(this.textContent || targetId, targetId);
+                } else if (typeof gtag !== 'undefined') {
                     gtag('event', 'click', {
                         event_category: 'Navigation',
                         event_label: targetId
@@ -206,7 +209,9 @@ function initFormHandling() {
                 form.reset();
                 
                 // Track successful submission
-                if (typeof gtag !== 'undefined') {
+                if (window.onMedicAnalytics) {
+                    window.onMedicAnalytics.trackFormSubmission('contact');
+                } else if (typeof gtag !== 'undefined') {
                     gtag('event', 'form_submit', {
                         event_category: 'Contact',
                         event_label: 'Success'
@@ -220,7 +225,13 @@ function initFormHandling() {
             console.error('Form submission error:', error);
             
             // Track error
-            if (typeof gtag !== 'undefined') {
+            if (window.onMedicAnalytics) {
+                window.onMedicAnalytics.trackEvent('form_error', {
+                    event_category: 'Contact',
+                    event_label: 'Form submission error',
+                    error_type: 'submission_failed'
+                });
+            } else if (typeof gtag !== 'undefined') {
                 gtag('event', 'exception', {
                     description: 'Form submission error',
                     fatal: false

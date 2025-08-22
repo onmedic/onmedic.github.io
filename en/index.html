@@ -80,6 +80,8 @@
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link rel="dns-prefetch" href="//formspree.io">
+    <link rel="dns-prefetch" href="//www.googletagmanager.com">
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
     
     <!-- Critical CSS Inline for Above-the-Fold Performance -->
     <style>
@@ -455,15 +457,21 @@
         function acceptAllCookies() {
             setCookieConsent('all');
             hideCookieBanner();
-            // Here you could activate optional cookies
-            console.log('Cookies accepted: all');
+            // Activate Google Analytics
+            if (window.onMedicAnalytics) {
+                window.onMedicAnalytics.enableAnalytics();
+            }
+            console.log('Cookies accepted: all - Analytics enabled');
         }
         
         function rejectOptionalCookies() {
             setCookieConsent('essential');
             hideCookieBanner();
-            // Keep only necessary cookies
-            console.log('Cookies accepted: essential only');
+            // Disable Google Analytics
+            if (window.onMedicAnalytics) {
+                window.onMedicAnalytics.disableAnalytics();
+            }
+            console.log('Cookies accepted: essential only - Analytics disabled');
         }
         
         // Show banner if needed
@@ -471,5 +479,8 @@
             setTimeout(showCookieBanner, 1500); // Wait 1.5 seconds before showing
         });
     </script>
+    
+    <!-- Google Analytics -->
+    <script defer src="/src/scripts/analytics.min.js"></script>
 </body>
 </html>

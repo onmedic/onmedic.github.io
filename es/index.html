@@ -80,6 +80,8 @@
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link rel="dns-prefetch" href="//formspree.io">
+    <link rel="dns-prefetch" href="//www.googletagmanager.com">
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
     
     <!-- Critical CSS Inline per Above-the-Fold Performance -->
     <style>
@@ -447,15 +449,21 @@
         function acceptAllCookies() {
             setCookieConsent('all');
             hideCookieBanner();
-            // Aquí podríais activar cookies opcionales
-            console.log('Cookies aceptadas: todas');
+            // Activar Google Analytics
+            if (window.onMedicAnalytics) {
+                window.onMedicAnalytics.enableAnalytics();
+            }
+            console.log('Cookies aceptadas: todas - Analytics activado');
         }
         
         function rejectOptionalCookies() {
             setCookieConsent('essential');
             hideCookieBanner();
-            // Mantener solo cookies necesarias
-            console.log('Cookies aceptadas: solo esenciales');
+            // Desactivar Google Analytics
+            if (window.onMedicAnalytics) {
+                window.onMedicAnalytics.disableAnalytics();
+            }
+            console.log('Cookies aceptadas: solo esenciales - Analytics desactivado');
         }
         
         // Mostrar banner si hace falta
