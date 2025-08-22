@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ca" dir="ltr">
+<head>
+    <!-- Meta bàsics -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Core -->
+    <title>Política de Privacitat - onmedic</title>
+    <meta name="description" content="Política de privacitat i protecció de dades d'onmedic. Com recollim, utilitzem i protegim la vostra informació personal.">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://onmedic.com/privacitat.html">
+    
+    <!-- CSS -->
+    <link rel="preload" href="/src/styles/main.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/src/styles/main.min.css"></noscript>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root{--color-primary:#0A2342;--color-accent:#00D4FF;--color-secondary:#6C7293;--color-background:#F8F9FD;--color-text:#1A1A2E;--color-white:#ffffff;--font-heading:'Space Grotesk',-apple-system,BlinkMacSystemFont,sans-serif;--font-body:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;--border-radius:12px}
+        body{font-family:var(--font-body);color:var(--color-text);background:var(--color-background);margin:0;padding:0;line-height:1.6}
+        .container{max-width:1200px;margin:0 auto;padding:0 2rem}
+        .legal-container{max-width:800px;margin:0 auto;padding:0 2rem}
+        .header{position:fixed;top:0;left:0;right:0;background:rgba(255,255,255,0.95);border-bottom:1px solid rgba(10,35,66,0.08);box-shadow:0 2px 20px rgba(10,35,66,0.06);z-index:1000;padding:1.2rem 0;transition:all 0.3s ease}
+        .nav-container{max-width:1200px;margin:0 auto;padding:0 2rem;display:flex;justify-content:space-between;align-items:center}
+        .logo{display:flex;align-items:center;text-decoration:none}
+        .logo img{height:65px;width:auto}
+        .main-nav{display:flex;align-items:center}
+        .nav-menu{display:flex;align-items:center;gap:0;list-style:none;margin:0;padding:0}
+        .nav-link{color:var(--color-secondary);text-decoration:none;font-weight:400;font-size:0.95rem;transition:all 0.2s ease;padding:0.8rem 1.2rem;border-radius:6px;margin:0 0.2rem}
+        .nav-link:hover{color:var(--color-primary);background:rgba(10,35,66,0.04)}
+        .nav-cta{background:var(--color-primary);color:var(--color-white)!important;padding:0.8rem 1.8rem;border-radius:6px;margin-left:0.8rem;font-weight:500}
+        .legal-content{padding:8rem 0 4rem 0}
+        .footer{background:var(--color-primary);color:var(--color-white);padding:3rem 0 1rem}
+        .footer-content{display:grid;grid-template-columns:2fr 1fr;gap:3rem;margin-bottom:2rem}
+        .footer-logo{font-family:var(--font-heading);font-size:1.5rem;font-weight:700;margin-bottom:1rem}
+        .footer-description{color:rgba(255,255,255,0.8);line-height:1.6;max-width:400px}
+        .footer-links{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+        .footer-section h4{font-weight:600;margin-bottom:1rem;color:var(--color-accent)}
+        .footer-section ul{list-style:none}
+        .footer-section ul li{margin-bottom:0.5rem}
+        .footer-section ul li a{color:rgba(255,255,255,0.95)!important;text-decoration:none;transition:all 0.2s ease}
+        .footer-section ul li a:visited{color:rgba(255,255,255,0.95)!important}
+        .footer-section ul li a:hover{color:var(--color-accent)!important;text-decoration:underline}
+        .footer-bottom{text-align:center;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.1);color:rgba(255,255,255,0.7)}
+        .footer-bottom a{color:var(--color-accent);text-decoration:none}
+        .footer-bottom a:hover{text-decoration:underline}
+        @media (max-width:768px){.footer-content{grid-template-columns:1fr;gap:2rem}.footer-links{grid-template-columns:1fr;gap:1.5rem}}
+        .legal-content h1{font-family:var(--font-heading);font-size:2.5rem;color:var(--color-primary);margin-bottom:1rem}
+        .legal-content h2{font-family:var(--font-heading);font-size:1.8rem;color:var(--color-primary);margin-top:3rem;margin-bottom:1rem}
+        .legal-content h3{font-family:var(--font-heading);font-size:1.4rem;color:var(--color-primary);margin-top:2rem;margin-bottom:0.5rem}
+        .legal-content p{margin-bottom:1rem;color:var(--color-text)}
+        .legal-content ul{margin-bottom:1rem;padding-left:1.5rem}
+        .legal-content li{margin-bottom:0.5rem;color:var(--color-text)}
+        .back-link{display:inline-block;color:var(--color-accent);text-decoration:none;margin-bottom:2rem;font-weight:500}
+        .back-link:hover{text-decoration:underline}
+        .update-date{color:var(--color-secondary);font-size:0.9rem;margin-bottom:2rem}
+        .highlight{background:rgba(0,212,255,0.1);padding:1rem;border-left:3px solid var(--color-accent);margin:1rem 0}
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <picture>
+                    <source srcset="/src/assets/images/logo-onmedic.webp" type="image/webp">
+                    <img src="/src/assets/images/logo-onmedic.jpg" alt="onmedic - Building eHealth" width="200" height="65">
+                </picture>
+            </a>
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <li><a href="/#about" class="nav-link">Innovació</a></li>
+                    <li><a href="/#expertise" class="nav-link">Expertesa</a></li>
+                    <li><a href="/contacte.html" class="nav-link nav-cta">Contacte</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contingut Legal -->
+    <main class="legal-content">
+        <div class="legal-container">
+            <a href="/" class="back-link">← Tornar a l'inici</a>
+            
+            <h1>Política de Privacitat</h1>
+            <p class="update-date">Última actualització: <span id="current-date"></span></p>
+            
+            <div class="highlight">
+                <strong>Resum:</strong> A onmedic respectem la vostra privacitat. Només recollim les dades necessàries per oferir-vos els nostres serveis i mai les compartim amb tercers sense el vostre consentiment explícit.
+            </div>
+            
+            <h2>1. Qui Som i Com Contactar-nos</h2>
+            <p><strong>onmedic</strong> és una empresa de tecnologia sanitària especialitzada en solucions amb Intel·ligència Artificial per a la indústria farmacèutica, hospitals i institucions sanitàries.</p>
+            <ul>
+                <li><strong>Responsable del tractament:</strong> onmedic</li>
+                <li><strong>Email de contacte:</strong> privacitat@onmedic.com</li>
+                <li><strong>Formulari de contacte:</strong> <a href="contacte.html">contacte.html</a></li>
+            </ul>
+            
+            <h2>2. Quines Dades Recollim</h2>
+            <h3>2.1 Informació que ens proporcioneu directament</h3>
+            <p>Quan utilitzeu els nostres formularis de contacte, recollim:</p>
+            <ul>
+                <li>Nom complet</li>
+                <li>Adreça de correu electrònic</li>
+                <li>Empresa o organització (opcional)</li>
+                <li>Missatge o consulta</li>
+                <li>Número de telèfon (si el proporcioneu)</li>
+            </ul>
+            
+            <h3>2.2 Informació recollida automàticament</h3>
+            <p>El nostre lloc web recopila automàticament certesa informació tècnica:</p>
+            <ul>
+                <li>Adreça IP</li>
+                <li>Tipus de navegador i versió</li>
+                <li>Sistema operatiu</li>
+                <li>Pàgines visitades i temps de visita</li>
+                <li>Idioma del navegador</li>
+                <li>Resolució de pantalla</li>
+            </ul>
+            
+            <h2>3. Per Què i Com Utilitzem les Vostres Dades</h2>
+            <h3>3.1 Finalitats del tractament</h3>
+            <ul>
+                <li><strong>Respondre consultes:</strong> Utilitzem les vostres dades per respondre als vostres missatges i consultes</li>
+                <li><strong>Millora del servei:</strong> Analitzem l'ús del lloc web per millorar l'experiència d'usuari</li>
+                <li><strong>Seguretat:</strong> Protegir el nostre lloc web contra activitats malicioses</li>
+                <li><strong>Comunicacions comercials:</strong> Només si ho accepteu explícitament, us podem enviar informació sobre els nostres serveis</li>
+            </ul>
+            
+            <h3>3.2 Base legal</h3>
+            <p>El tractament de les vostres dades es basa en:</p>
+            <ul>
+                <li><strong>Consentiment:</strong> Per enviar comunicacions comercials</li>
+                <li><strong>Interès legítim:</strong> Per respondre consultes i millorar els nostres serveis</li>
+                <li><strong>Seguretat:</strong> Per protegir el nostre lloc web i usuaris</li>
+            </ul>
+            
+            <h2>4. Cookies i Tecnologies Similars</h2>
+            <p>Utilitzem cookies per millorar la vostra experiència al nostre lloc web:</p>
+            
+            <h3>4.1 Tipus de cookies</h3>
+            <ul>
+                <li><strong>Cookies tècniques:</strong> Necessàries pel funcionament del lloc web</li>
+                <li><strong>Cookies analítiques:</strong> Per entendre com utilitzeu el lloc web</li>
+                <li><strong>Cookies de personalització:</strong> Per recordar les vostres preferències</li>
+            </ul>
+            
+            <p>Podeu acceptar o rebutjar les cookies des del nostre banner de cookies. Rebutjar-les pot limitar algunes funcionalitats del lloc.</p>
+            
+            <h2>5. Amb Qui Compartim les Vostres Dades</h2>
+            <p><strong>No venem, lloguem ni cedim les vostres dades personals a tercers.</strong></p>
+            
+            <p>Només podem compartir les vostres dades en casos molt específics:</p>
+            <ul>
+                <li><strong>Proveïdors de serveis:</strong> Empreses que ens ajuden a operar el lloc web (hosting, email)</li>
+                <li><strong>Obligacions legals:</strong> Quan sigui requerit per llei o autoritats competents</li>
+                <li><strong>Protecció de drets:</strong> Per protegir els nostres drets legals o els de tercers</li>
+            </ul>
+            
+            <h2>6. Transferències Internacionals</h2>
+            <p>Alguns dels nostres proveïdors de serveis poden estar ubicats fora de la Unió Europea. En aquests casos, ens assegurem que ofereixin garanties adequades per a la protecció de les vostres dades.</p>
+            
+            <h2>7. Temps de Conservació</h2>
+            <p>Conservem les vostres dades durant el temps necessari per complir amb les finalitats per les quals van ser recollides:</p>
+            <ul>
+                <li><strong>Consultes:</strong> 3 anys des de la última comunicació</li>
+                <li><strong>Dades tècniques:</strong> 2 anys màxim</li>
+                <li><strong>Comunicacions comercials:</strong> Fins que retireu el consentiment</li>
+            </ul>
+            
+            <h2>8. Els Vostres Drets</h2>
+            <p>Com a usuari, teniu els següents drets sobre les vostres dades personals:</p>
+            <ul>
+                <li><strong>Accés:</strong> Saber quines dades tenim sobre vosaltres</li>
+                <li><strong>Rectificació:</strong> Corregir dades incorrectes</li>
+                <li><strong>Supressió:</strong> Sol·licitar l'eliminació de les vostres dades</li>
+                <li><strong>Limitació:</strong> Restringir el tractament en certes circumstàncies</li>
+                <li><strong>Portabilitat:</strong> Rebre les vostres dades en un format estructurat</li>
+                <li><strong>Oposició:</strong> Oposar-vos al tractament basat en interès legítim</li>
+                <li><strong>Retirada del consentiment:</strong> Retirar el consentiment en qualsevol moment</li>
+            </ul>
+            
+            <p>Per exercir aquests drets, contacteu-nos a <a href="mailto:privacitat@onmedic.com">privacitat@onmedic.com</a></p>
+            
+            <h2>9. Seguretat de les Dades</h2>
+            <p>Implementem mesures de seguretat tècniques i organitzatives per protegir les vostres dades:</p>
+            <ul>
+                <li>Xifratge SSL/TLS per a totes les comunicacions</li>
+                <li>Servidors segurs amb accés restringit</li>
+                <li>Còpies de seguretat regulars</li>
+                <li>Formació del personal en protecció de dades</li>
+                <li>Auditoríes regulars de seguretat</li>
+            </ul>
+            
+            <h2>10. Menors d'Edat</h2>
+            <p>Els nostres serveis no estan dirigits a menors de 16 anys. No recollim conscientemente dades personals de menors sense el consentiment dels pares o tutors legals.</p>
+            
+            <h2>11. Modificacions d'aquesta Política</h2>
+            <p>Podem actualitzar aquesta política de privacitat ocasionalment. Us notificarem els canvis significatius mitjançant:</p>
+            <ul>
+                <li>Avís destacat al lloc web</li>
+                <li>Email (si tenim la vostra adreça)</li>
+                <li>Actualització de la data al cap d'aquesta pàgina</li>
+            </ul>
+            
+            <h2>12. Autoritat de Control</h2>
+            <p>Si creieu que no complim amb la normativa de protecció de dades, podeu presentar una reclamació davant l'<a href="https://www.aepd.es" target="_blank">Agencia Española de Protección de Datos (AEPD)</a>.</p>
+            
+            <h2>13. Contacte i Preguntes</h2>
+            <p>Per qualsevol pregunta sobre aquesta política de privacitat o el tractament de les vostres dades:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:info@onmedic.com">info@onmedic.com</a></li>
+                <li><strong>Formulari:</strong> <a href="contacte.html">Pàgina de contacte</a></li>
+                <li><strong>Temps de resposta:</strong> Respondrem en un màxim de 30 dies</li>
+            </ul>
+            
+            <div class="highlight">
+                <strong>Recordeu:</strong> Aquesta política compleix amb el RGPD (Reglament General de Protecció de Dades) de la Unió Europea i la normativa espanyola de protecció de dades.
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-tagline">Building eHealth</div>
+                    <div class="footer-logo">onmedic</div>
+                    <p class="footer-description">
+                        La tecnologia al servei de la salut. Creem solucions que realment funcionen 
+                        per hospitals, farmacèutiques i professionals sanitaris d'arreu del món.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> <a href="/">onmedic</a>. Building eHealth. Tots els drets reservats. | <a href="termes.html">Termes d'Ús</a> | <a href="privacitat.html">Privacitat</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Any dinàmic
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        // Data actual per l'actualització
+        document.getElementById('current-date').textContent = new Date().toLocaleDateString('ca-ES');
+    </script>
+</body>
+</html>

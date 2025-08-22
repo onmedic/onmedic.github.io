@@ -249,7 +249,7 @@
                             <label class="checkbox-label">
                                 <input type="checkbox" name="privacy" value="yes" required>
                                 <span class="checkmark"></span>
-                                He llegit i accepto la <a href="#" target="_blank">política de privacitat</a> *
+                                He llegit i accepto la <a href="privacitat.html" target="_blank">política de privacitat</a> *
                             </label>
                         </div>
                         
@@ -268,47 +268,79 @@
 
     <!-- Footer -->
     <footer class="footer" id="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-main">
-                    <div class="footer-tagline">Building eHealth</div>
-                    <div class="footer-logo">onmedic</div>
-                    <p class="footer-description">
-                        Transformem la salut a través de la tecnologia. Desenvolupem solucions innovadores 
-                        per a la indústria farmacèutica, hospitals i institucions sanitàries globals.
-                    </p>
-                </div>
-                
-                <div class="footer-links">
-                    <div class="footer-section">
-                        <h4>Navegació</h4>
-                        <ul>
-                            <li><a href="/index.html">Inici</a></li>
-                            <li><a href="/index.html#about">Qui Som</a></li>
-                            <li><a href="/index.html#expertise">Expertesa</a></li>
-                            <li><a href="/contacte.html">Contacte</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="footer-section">
-                        <h4>Serveis</h4>
-                        <ul>
-                            <li>Analítica de Dades</li>
-                            <li>Ciberseguretat</li>
-                            <li>Desenvolupament App</li>
-                            <li>Transformació Digital</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
+        <div class="container">            
             <div class="footer-bottom">
-                <p>&copy; 2025 <a href="/">onmedic</a>. Building eHealth. Tots els drets reservats.</p>
+                <p>&copy; <span id="current-year"></span> <a href="/">onmedic</a>. Building eHealth. Tots els drets reservats. | <a href="termes.html">Termes d'Ús</a> | <a href="privacitat.html">Privacitat</a></p>
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
     <script src="/src/scripts/main.min.js" defer></script>
+    
+    <!-- Banner de Cookies -->
+    <div id="cookie-consent-banner" style="display: none; position: fixed; bottom: 0; left: 0; right: 0; background: rgba(10, 35, 66, 0.95); color: white; padding: 1rem; z-index: 10000; backdrop-filter: blur(10px); border-top: 1px solid rgba(255,255,255,0.1);">
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+            <div style="flex: 1; min-width: 200px;">
+                <p style="margin: 0; font-size: 0.9rem; line-height: 1.4;">
+                    🍪 Fem servir cookies per millorar la vostra experiència. 
+                    <a href="cookies.html" style="color: #00D4FF; text-decoration: underline;">Més informació</a>
+                </p>
+            </div>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                <button onclick="acceptAllCookies()" style="background: #00D4FF; color: white; border: none; padding: 0.5rem 1rem; border-radius: 6px; font-size: 0.85rem; cursor: pointer; font-weight: 500;">
+                    Acceptar
+                </button>
+                <button onclick="rejectOptionalCookies()" style="background: transparent; color: white; border: 1px solid rgba(255,255,255,0.3); padding: 0.5rem 1rem; border-radius: 6px; font-size: 0.85rem; cursor: pointer;">
+                    Només necessàries
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script per any dinàmic -->
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Gestió de cookies
+        function getCookieConsent() {
+            return localStorage.getItem('cookieConsent');
+        }
+        
+        function setCookieConsent(value) {
+            localStorage.setItem('cookieConsent', value);
+            localStorage.setItem('cookieConsentDate', new Date().toISOString());
+        }
+        
+        function showCookieBanner() {
+            const consent = getCookieConsent();
+            if (!consent) {
+                document.getElementById('cookie-consent-banner').style.display = 'block';
+            }
+        }
+        
+        function hideCookieBanner() {
+            document.getElementById('cookie-consent-banner').style.display = 'none';
+        }
+        
+        function acceptAllCookies() {
+            setCookieConsent('all');
+            hideCookieBanner();
+            // Aquí podríeu activar cookies opcionals
+            console.log('Cookies acceptades: totes');
+        }
+        
+        function rejectOptionalCookies() {
+            setCookieConsent('essential');
+            hideCookieBanner();
+            // Mantenir només cookies necessàries
+            console.log('Cookies acceptades: només essencials');
+        }
+        
+        // Mostrar banner si cal
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(showCookieBanner, 1500); // Esperar 1.5 segons abans de mostrar
+        });
+    </script>
 </body>
 </html>

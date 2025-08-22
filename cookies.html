@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ca" dir="ltr">
+<head>
+    <!-- Meta bàsics -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Core -->
+    <title>Política de Cookies - onmedic</title>
+    <meta name="description" content="Informació sobre l'ús de cookies al lloc web d'onmedic. Com utilitzem les cookies per millorar la vostra experiència.">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://onmedic.com/cookies.html">
+    
+    <!-- CSS -->
+    <link rel="preload" href="/src/styles/main.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/src/styles/main.min.css"></noscript>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root{--color-primary:#0A2342;--color-accent:#00D4FF;--color-secondary:#6C7293;--color-background:#F8F9FD;--color-text:#1A1A2E;--color-white:#ffffff;--font-heading:'Space Grotesk',-apple-system,BlinkMacSystemFont,sans-serif;--font-body:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;--border-radius:12px}
+        body{font-family:var(--font-body);color:var(--color-text);background:var(--color-background);margin:0;padding:0;line-height:1.6}
+        .container{max-width:1200px;margin:0 auto;padding:0 2rem}
+        .legal-container{max-width:800px;margin:0 auto;padding:0 2rem}
+        .header{position:fixed;top:0;left:0;right:0;background:rgba(255,255,255,0.95);border-bottom:1px solid rgba(10,35,66,0.08);box-shadow:0 2px 20px rgba(10,35,66,0.06);z-index:1000;padding:1.2rem 0;transition:all 0.3s ease}
+        .nav-container{max-width:1200px;margin:0 auto;padding:0 2rem;display:flex;justify-content:space-between;align-items:center}
+        .logo{display:flex;align-items:center;text-decoration:none}
+        .logo img{height:65px;width:auto}
+        .main-nav{display:flex;align-items:center}
+        .nav-menu{display:flex;align-items:center;gap:0;list-style:none;margin:0;padding:0}
+        .nav-link{color:var(--color-secondary);text-decoration:none;font-weight:400;font-size:0.95rem;transition:all 0.2s ease;padding:0.8rem 1.2rem;border-radius:6px;margin:0 0.2rem}
+        .nav-link:hover{color:var(--color-primary);background:rgba(10,35,66,0.04)}
+        .nav-cta{background:var(--color-primary);color:var(--color-white)!important;padding:0.8rem 1.8rem;border-radius:6px;margin-left:0.8rem;font-weight:500}
+        .legal-content{padding:8rem 0 4rem 0}
+        .footer{background:var(--color-primary);color:var(--color-white);padding:3rem 0 1rem}
+        .footer-content{display:grid;grid-template-columns:2fr 1fr;gap:3rem;margin-bottom:2rem}
+        .footer-logo{font-family:var(--font-heading);font-size:1.5rem;font-weight:700;margin-bottom:1rem}
+        .footer-description{color:rgba(255,255,255,0.8);line-height:1.6;max-width:400px}
+        .footer-links{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+        .footer-section h4{font-weight:600;margin-bottom:1rem;color:var(--color-accent)}
+        .footer-section ul{list-style:none}
+        .footer-section ul li{margin-bottom:0.5rem}
+        .footer-section ul li a{color:rgba(255,255,255,0.95)!important;text-decoration:none;transition:all 0.2s ease}
+        .footer-section ul li a:visited{color:rgba(255,255,255,0.95)!important}
+        .footer-section ul li a:hover{color:var(--color-accent)!important;text-decoration:underline}
+        .footer-bottom{text-align:center;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.1);color:rgba(255,255,255,0.7)}
+        .footer-bottom a{color:var(--color-accent);text-decoration:none}
+        .footer-bottom a:hover{text-decoration:underline}
+        @media (max-width:768px){.footer-content{grid-template-columns:1fr;gap:2rem}.footer-links{grid-template-columns:1fr;gap:1.5rem}}
+        .legal-content h1{font-family:var(--font-heading);font-size:2.5rem;color:var(--color-primary);margin-bottom:1rem}
+        .legal-content h2{font-family:var(--font-heading);font-size:1.8rem;color:var(--color-primary);margin-top:3rem;margin-bottom:1rem}
+        .legal-content h3{font-family:var(--font-heading);font-size:1.4rem;color:var(--color-primary);margin-top:2rem;margin-bottom:0.5rem}
+        .legal-content p{margin-bottom:1rem;color:var(--color-text)}
+        .legal-content ul{margin-bottom:1rem;padding-left:1.5rem}
+        .legal-content li{margin-bottom:0.5rem;color:var(--color-text)}
+        .back-link{display:inline-block;color:var(--color-accent);text-decoration:none;margin-bottom:2rem;font-weight:500}
+        .back-link:hover{text-decoration:underline}
+        .update-date{color:var(--color-secondary);font-size:0.9rem;margin-bottom:2rem}
+        .cookie-table{width:100%;border-collapse:collapse;margin:1rem 0}
+        .cookie-table th,.cookie-table td{border:1px solid #ddd;padding:0.8rem;text-align:left}
+        .cookie-table th{background:var(--color-primary);color:white;font-weight:600}
+        .cookie-table tr:nth-child(even){background:rgba(10,35,66,0.05)}
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <picture>
+                    <source srcset="/src/assets/images/logo-onmedic.webp" type="image/webp">
+                    <img src="/src/assets/images/logo-onmedic.jpg" alt="onmedic - Building eHealth" width="200" height="65">
+                </picture>
+            </a>
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <li><a href="/#about" class="nav-link">Innovació</a></li>
+                    <li><a href="/#expertise" class="nav-link">Expertesa</a></li>
+                    <li><a href="/contacte.html" class="nav-link nav-cta">Contacte</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contingut Legal -->
+    <main class="legal-content">
+        <div class="legal-container">
+            <a href="/" class="back-link">← Tornar a l'inici</a>
+            
+            <h1>Política de Cookies</h1>
+            <p class="update-date">Última actualització: <span id="current-date"></span></p>
+            
+            <h2>Què són les Cookies?</h2>
+            <p>Les cookies són petits fitxers de text que es guarden al vostre dispositiu quan visiteu un lloc web. Ens ajuden a recordar les vostres preferències i a millorar l'experiència de navegació.</p>
+            
+            <h2>Com Utilitzem les Cookies</h2>
+            <p>A onmedic utilitzem cookies per:</p>
+            <ul>
+                <li><strong>Funcionalitat:</strong> Recordar les vostres preferències (idioma, configuració)</li>
+                <li><strong>Analítica:</strong> Entendre com utilitzeu el nostre lloc web</li>
+                <li><strong>Seguretat:</strong> Protegir-vos contra activitats malicioses</li>
+                <li><strong>Millora contínua:</strong> Identificar àrees de millora al lloc</li>
+            </ul>
+            
+            <h2>Tipus de Cookies que Utilitzem</h2>
+            
+            <table class="cookie-table">
+                <thead>
+                    <tr>
+                        <th>Tipus</th>
+                        <th>Propòsit</th>
+                        <th>Durada</th>
+                        <th>Necessària</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Tècniques</strong></td>
+                        <td>Permeten la navegació bàsica del lloc web</td>
+                        <td>Sessió</td>
+                        <td>Sí</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Preferències</strong></td>
+                        <td>Recorden les vostres preferències d'usuari</td>
+                        <td>1 any</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Analítiques</strong></td>
+                        <td>Ens ajuden a entendre l'ús del lloc web</td>
+                        <td>2 anys</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Seguretat</strong></td>
+                        <td>Protegeixen contra atacs i frau</td>
+                        <td>24 hores</td>
+                        <td>Sí</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h2>Cookies de Tercers</h2>
+            <p>Utilitzem alguns serveis de tercers que poden establir les seves pròpies cookies:</p>
+            <ul>
+                <li><strong>Google Fonts:</strong> Per carregar tipografies</li>
+                <li><strong>Formspree:</strong> Per processar formularis de contacte</li>
+                <li><strong>Serveis de hosting:</strong> Per la seguretat i rendiment del lloc</li>
+            </ul>
+            
+            <h2>Com Gestionar les Cookies</h2>
+            <h3>Des del nostre lloc web</h3>
+            <p>Podeu gestionar les vostres preferències de cookies des del banner que apareix a la part inferior de la pantalla o fent clic <a href="#" onclick="showCookieConsent(); return false;">aquí</a>.</p>
+            
+            <h3>Des del vostre navegador</h3>
+            <p>També podeu controlar les cookies des de la configuració del vostre navegador:</p>
+            <ul>
+                <li><strong>Chrome:</strong> Configuració > Privacitat i seguretat > Cookies</li>
+                <li><strong>Firefox:</strong> Preferències > Privacitat i Seguretat > Cookies</li>
+                <li><strong>Safari:</strong> Preferències > Privacitat > Cookies</li>
+                <li><strong>Edge:</strong> Configuració > Cookies i permisos del lloc</li>
+            </ul>
+            
+            <h2>Conseqüències de Desactivar les Cookies</h2>
+            <p>Si desactiveu totes les cookies:</p>
+            <ul>
+                <li>Alguns elements del lloc web poden no funcionar correctament</li>
+                <li>Haureu de reintroduir les vostres preferències cada visita</li>
+                <li>No podrem recordar el vostre consentiment de cookies</li>
+                <li>L'experiència de navegació pot ser menys fluida</li>
+            </ul>
+            
+            <h2>Actualitzacions d'aquesta Política</h2>
+            <p>Aquesta política pot ser actualitzada per reflectir canvis en l'ús de cookies. Us recomanem revisar-la periòdicament.</p>
+            
+            <h2>Contacte</h2>
+            <p>Per preguntes sobre l'ús de cookies:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:privacitat@onmedic.com">privacitat@onmedic.com</a></li>
+                <li><strong>Formulari:</strong> <a href="contacte.html">Pàgina de contacte</a></li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-tagline">Building eHealth</div>
+                    <div class="footer-logo">onmedic</div>
+                    <p class="footer-description">
+                        La tecnologia al servei de la salut. Creem solucions que realment funcionen 
+                        per hospitals, farmacèutiques i professionals sanitaris d'arreu del món.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> <a href="/">onmedic</a>. Building eHealth. Tots els drets reservats. | <a href="termes.html">Termes d'Ús</a> | <a href="privacitat.html">Privacitat</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Any dinàmic
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        // Data actual per l'actualització
+        document.getElementById('current-date').textContent = new Date().toLocaleDateString('ca-ES');
+        
+        // Función para mostrar el banner de cookies (si existe)
+        function showCookieConsent() {
+            var banner = document.getElementById('cookie-consent-banner');
+            if (banner) {
+                banner.style.display = 'block';
+            } else {
+                alert('El banner de cookies es mostrarà a les pàgines principals del lloc web.');
+            }
+        }
+    </script>
+</body>
+</html>
