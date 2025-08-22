@@ -87,8 +87,10 @@
         *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
         :root{--color-primary:#0A2342;--color-accent:#00D4FF;--color-secondary:#6C7293;--color-background:#F8F9FD;--color-text:#1A1A2E;--color-white:#ffffff;--font-heading:'Space Grotesk',-apple-system,BlinkMacSystemFont,sans-serif;--font-body:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;--gradient-hero:linear-gradient(135deg,var(--color-primary) 0%,var(--color-accent) 100%);--shadow-card:0 10px 40px rgba(10,35,66,0.1);--border-radius:12px}
         
-        /* URGENT FIX: Forçar visibilitat text expertesa */
-        .expertise-card h3 {
+        /* ULTRAFIX: Forçar visibilitat text expertesa - v2 */
+        .expertise-card h3,
+        #expertise .expertise-card h3,
+        section.expertise .expertise-card h3 {
             color: #ffffff !important;
             display: block !important;
             visibility: visible !important;
@@ -97,20 +99,51 @@
             font-weight: 600 !important;
             margin-bottom: 1rem !important;
             opacity: 1 !important;
+            height: auto !important;
+            width: auto !important;
+            overflow: visible !important;
+            text-indent: 0 !important;
+            line-height: 1.2 !important;
+            z-index: 999 !important;
+            position: relative !important;
         }
-        .expertise-card p {
+        .expertise-card p,
+        #expertise .expertise-card p,
+        section.expertise .expertise-card p {
             color: rgba(255,255,255,0.8) !important;
             display: block !important;
             visibility: visible !important;
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
             line-height: 1.6 !important;
             opacity: 1 !important;
+            height: auto !important;
+            width: auto !important;
+            overflow: visible !important;
+            text-indent: 0 !important;
+            z-index: 999 !important;
+            position: relative !important;
         }
-        .expertise-card {
+        .expertise-card,
+        #expertise .expertise-card,
+        section.expertise .expertise-card {
             background: rgba(255,255,255,0.1) !important;
             padding: 2.5rem 2rem !important;
             border-radius: 12px !important;
             text-align: center !important;
+            display: block !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+        }
+        
+        /* Additional force styles for any potential conflicts */
+        .expertise-card * {
+            box-sizing: border-box !important;
+        }
+        .expertise-card h3::before,
+        .expertise-card h3::after,
+        .expertise-card p::before,
+        .expertise-card p::after {
+            display: none !important;
         }
         
         /* Body i HTML */
@@ -394,6 +427,99 @@
         </div>
     </footer>
 
+    <!-- ULTRAFIX: Force expertise text visibility with JavaScript -->
+    <script>
+        // Immediate fix for expertise text visibility
+        function forceExpertiseTextVisibility() {
+            console.log('🔧 ULTRAFIX: Forcing expertise text visibility...');
+            
+            // Find all expertise cards
+            const expertiseCards = document.querySelectorAll('.expertise-card');
+            console.log(`Found ${expertiseCards.length} expertise cards`);
+            
+            expertiseCards.forEach((card, index) => {
+                // Force styles on h3 elements
+                const h3 = card.querySelector('h3');
+                if (h3) {
+                    h3.style.cssText = `
+                        color: #ffffff !important;
+                        display: block !important;
+                        visibility: visible !important;
+                        font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif !important;
+                        font-size: 1.4rem !important;
+                        font-weight: 600 !important;
+                        margin-bottom: 1rem !important;
+                        opacity: 1 !important;
+                        height: auto !important;
+                        width: auto !important;
+                        overflow: visible !important;
+                        text-indent: 0 !important;
+                        line-height: 1.2 !important;
+                        z-index: 999 !important;
+                        position: relative !important;
+                    `;
+                    console.log(`✅ Fixed h3 for card ${index + 1}: "${h3.textContent}"`);
+                }
+                
+                // Force styles on p elements
+                const p = card.querySelector('p');
+                if (p) {
+                    p.style.cssText = `
+                        color: rgba(255,255,255,0.8) !important;
+                        display: block !important;
+                        visibility: visible !important;
+                        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+                        line-height: 1.6 !important;
+                        opacity: 1 !important;
+                        height: auto !important;
+                        width: auto !important;
+                        overflow: visible !important;
+                        text-indent: 0 !important;
+                        z-index: 999 !important;
+                        position: relative !important;
+                    `;
+                    console.log(`✅ Fixed p for card ${index + 1}`);
+                }
+                
+                // Force styles on card itself
+                card.style.cssText = card.style.cssText + `
+                    background: rgba(255,255,255,0.1) !important;
+                    padding: 2.5rem 2rem !important;
+                    border-radius: 12px !important;
+                    text-align: center !important;
+                    display: block !important;
+                    visibility: visible !important;
+                    opacity: 1 !important;
+                `;
+            });
+            
+            console.log('🎯 ULTRAFIX: Expertise text visibility fix applied!');
+        }
+        
+        // Apply fix immediately when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', forceExpertiseTextVisibility);
+        } else {
+            forceExpertiseTextVisibility();
+        }
+        
+        // Apply fix after fonts load
+        if (document.fonts) {
+            document.fonts.ready.then(() => {
+                setTimeout(forceExpertiseTextVisibility, 100);
+            });
+        }
+        
+        // Apply fix after window load
+        window.addEventListener('load', () => {
+            setTimeout(forceExpertiseTextVisibility, 200);
+        });
+        
+        // Apply fix after any potential animations
+        setTimeout(forceExpertiseTextVisibility, 2000);
+        setTimeout(forceExpertiseTextVisibility, 5000);
+    </script>
+    
     <!-- Scripts no bloquejants -->
     <script defer src="/src/scripts/main.min.js"></script>
     <script defer src="/src/scripts/animations.min.js"></script>
