@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 6 Cards - OnMèdic</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+        }
+
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        @media (min-width: 1200px) {
+            .expertise-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .expertise-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 2px solid red;
+            position: relative;
+        }
+
+        .expertise-card::before {
+            content: attr(data-card);
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            background: red;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 0.8rem;
+        }
+
+        .expertise-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .expertise-card .icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            color: #667eea;
+        }
+
+        .expertise-card h3 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .expertise-card p {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        .test-info {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem;
+            border-radius: 10px;
+            color: white;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="test-info">
+            <h2>🧪 Test de les 6 Cards d'Expertesa</h2>
+            <p>Aquest fitxer verifica que totes les 6 cards es mostrin correctament amb la nova configuració CSS</p>
+        </div>
+
+        <h1>Àrees d'Expertesa OnMèdic</h1>
+
+        <div class="expertise-grid">
+            <div class="expertise-card" data-card="CARD 1">
+                <div class="icon">🔬</div>
+                <h3>Investigació Clínica</h3>
+                <p>Desenvolupament i execució d'estudis clínics innovadors per avançar en el coneixement mèdic i millorar els tractaments.</p>
+            </div>
+
+            <div class="expertise-card" data-card="CARD 2">
+                <div class="icon">💊</div>
+                <h3>Desenvolupament Farmacològic</h3>
+                <p>Creació i optimització de nous fàrmacs amb un enfocament integral des de la investigació fins a la comercialització.</p>
+            </div>
+
+            <div class="expertise-card" data-card="CARD 3">
+                <div class="icon">🧬</div>
+                <h3>Medicina Personalitzada</h3>
+                <p>Tractaments adaptats al perfil genètic i característiques individuals de cada pacient per a una medicina de precisió.</p>
+            </div>
+
+            <div class="expertise-card" data-card="CARD 4">
+                <div class="icon">🏥</div>
+                <h3>Solucions Hospitalàries</h3>
+                <p>Sistemes integrats de gestió hospitalària que optimitzen els processos clínics i administratius dels centres sanitaris.</p>
+            </div>
+
+            <div class="expertise-card" data-card="CARD 5">
+                <div class="icon">📱</div>
+                <h3>Telemedicina</h3>
+                <p>Plataformes digitals avançades que connecten pacients i professionals sanitaris per a una atenció mèdica accessible.</p>
+            </div>
+
+            <div class="expertise-card" data-card="CARD 6">
+                <div class="icon">🔍</div>
+                <h3>Diagnòstic Avançat</h3>
+                <p>Tecnologies d'última generació per a la detecció precoç i diagnòstic precís de malalties complexes.</p>
+            </div>
+        </div>
+
+        <div class="test-info" style="margin-top: 3rem;">
+            <p><strong>✅ Si veus les 6 cards numerades (CARD 1-6) amb bordes vermells, el layout funciona correctament!</strong></p>
+            <p>Desktop: 3 columnes | Tablet/Mobile: Grid responsiu</p>
+        </div>
+    </div>
+</body>
+</html>

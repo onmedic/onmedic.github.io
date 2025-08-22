@@ -22,3 +22,51 @@
 [debug] [2025-08-22T09:47:38.613Z] > authorizing via signed-in user (dialgo@onmedic.org)
 [debug] [2025-08-22T09:47:38.613Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
 [debug] [2025-08-22T09:47:38.613Z] > authorizing via signed-in user (dialgo@onmedic.org)
+[debug] [2025-08-22T11:32:18.949Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"projects"}
+[debug] [2025-08-22T11:32:18.951Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"projects"}
+[debug] [2025-08-22T11:32:18.952Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"projects"}
+[debug] [2025-08-22T11:32:18.952Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"projects"}
+[debug] [2025-08-22T11:32:18.952Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"projects"}
+[debug] [2025-08-22T11:32:18.952Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"projects"}
+[debug] [2025-08-22T11:32:18.954Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"projects"}
+[debug] [2025-08-22T11:32:18.954Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"projects"}
+[debug] [2025-08-22T11:32:18.955Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-22T11:32:18.955Z] > authorizing via signed-in user (dialgo@onmedic.org)
+[debug] [2025-08-22T11:32:18.955Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-22T11:32:18.955Z] > authorizing via signed-in user (dialgo@onmedic.org)
+[debug] [2025-08-22T11:55:48.904Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"projects"}
+[debug] [2025-08-22T11:55:48.906Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"projects"}
+[debug] [2025-08-22T11:55:48.907Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"projects"}
+[debug] [2025-08-22T11:55:48.907Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"projects"}
+[debug] [2025-08-22T11:55:48.907Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"projects"}
+[debug] [2025-08-22T11:55:48.907Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"projects"}
+[debug] [2025-08-22T11:55:48.909Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"projects"}
+[debug] [2025-08-22T11:55:48.910Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"projects"}
+[debug] [2025-08-22T11:55:48.910Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-22T11:55:48.910Z] > authorizing via signed-in user (dialgo@onmedic.org)
+[debug] [2025-08-22T11:55:48.910Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-22T11:55:48.910Z] > authorizing via signed-in user (dialgo@onmedic.org)
+[debug] [2025-08-22T11:58:28.629Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"projects"}
+[debug] [2025-08-22T11:58:28.631Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"projects"}
+[debug] [2025-08-22T11:58:28.631Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"projects"}
+[debug] [2025-08-22T11:58:28.631Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"projects"}
+[debug] [2025-08-22T11:58:28.632Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"projects"}
+[debug] [2025-08-22T11:58:28.632Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"projects"}
+[debug] [2025-08-22T11:58:28.634Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"projects"}
+[debug] [2025-08-22T11:58:28.634Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"projects"}
+[debug] [2025-08-22T11:58:28.634Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-22T11:58:28.635Z] > authorizing via signed-in user (dialgo@onmedic.org)
+[debug] [2025-08-22T11:58:28.635Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-22T11:58:28.635Z] > authorizing via signed-in user (dialgo@onmedic.org)
+[debug] [2025-08-22T13:31:33.612Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"projects"}
+[debug] [2025-08-22T13:31:33.614Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"projects"}
+[debug] [2025-08-22T13:31:33.614Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"projects"}
+[debug] [2025-08-22T13:31:33.614Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"projects"}
+[debug] [2025-08-22T13:31:33.615Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"projects"}
+[debug] [2025-08-22T13:31:33.615Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"projects"}
+[debug] [2025-08-22T13:31:33.617Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"projects"}
+[debug] [2025-08-22T13:31:33.617Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"projects"}
+[debug] [2025-08-22T13:31:33.617Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-22T13:31:33.617Z] > authorizing via signed-in user (dialgo@onmedic.org)
+[debug] [2025-08-22T13:31:33.618Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-22T13:31:33.618Z] > authorizing via signed-in user (dialgo@onmedic.org)

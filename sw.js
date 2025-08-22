@@ -1,14 +1,12 @@
 // onmedic Service Worker
 // Cache strategy per millor performance
 
-const CACHE_NAME = 'onmedic-v1.0.0';
-const STATIC_CACHE = 'onmedic-static-v1.0.0';
-const DYNAMIC_CACHE = 'onmedic-dynamic-v1.0.0';
+const CACHE_NAME = 'onmedic-v1.0.1';
+const STATIC_CACHE = 'onmedic-static-v1.0.1';
+const DYNAMIC_CACHE = 'onmedic-dynamic-v1.0.1';
 
-// Recursos per cachear immediatament
+// Recursos per cachear immediatament (SENSE index.html per evitar problemes)
 const urlsToCache = [
-    '/',
-    '/index.html',
     '/src/styles/main.css',
     '/src/scripts/main.js',
     '/src/scripts/animations.js',
@@ -77,8 +75,13 @@ self.addEventListener('fetch', event => {
     );
 });
 
-// Check if resource is static (CSS, JS, images, fonts)
+// Check if resource is static (CSS, JS, images, fonts) - EXCLUDING index.html
 function isStaticResource(url) {
+    // Never cache index.html as static to avoid serving old content
+    if (url.endsWith('/') || url.endsWith('index.html') || url === location.origin) {
+        return false;
+    }
+    
     return /\.(css|js|jpg|jpeg|png|webp|svg|woff2?|ttf|eot)$/i.test(url) ||
            url.includes('/src/assets/') ||
            url.includes('/src/styles/') ||
