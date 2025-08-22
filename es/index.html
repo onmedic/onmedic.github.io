@@ -87,6 +87,42 @@
         *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
         :root{--color-primary:#0A2342;--color-accent:#00D4FF;--color-secondary:#6C7293;--color-background:#F8F9FD;--color-text:#1A1A2E;--color-white:#ffffff;--font-heading:'Space Grotesk',-apple-system,BlinkMacSystemFont,sans-serif;--font-body:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;--gradient-hero:linear-gradient(135deg,var(--color-primary) 0%,var(--color-accent) 100%);--shadow-card:0 10px 40px rgba(10,35,66,0.1);--border-radius:12px}
         
+        /* CLEAN FIX: Remove backdrop-filter and ensure text visibility */
+        .expertise-card {
+            background: rgba(10, 35, 66, 0.8) !important;
+            backdrop-filter: none !important;
+            -webkit-backdrop-filter: none !important;
+            padding: 2.5rem 2rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: center;
+        }
+        
+        .expertise-card h3 {
+            color: #ffffff !important;
+            font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif !important;
+            font-size: 1.4rem !important;
+            font-weight: 600 !important;
+            margin-bottom: 1rem !important;
+            line-height: 1.2 !important;
+        }
+        
+        .expertise-card p {
+            color: #cccccc !important;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif !important;
+            line-height: 1.6 !important;
+            opacity: 1 !important;
+        }
+        
+        /* Fix section header text visibility in expertise section */
+        .expertise .section-header h2 {
+            color: var(--color-text) !important;
+        }
+        
+        .expertise .section-header .section-subtitle {
+            color: var(--color-secondary) !important;
+        }
+        
         /* Body i HTML */
         html{scroll-behavior:smooth;scroll-padding-top:120px}
         body{font-family:var(--font-body);font-size:16px;line-height:1.6;color:var(--color-text);background-color:var(--color-background);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
