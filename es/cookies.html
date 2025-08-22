@@ -69,6 +69,12 @@
         .cookie-table th,.cookie-table td{border:1px solid #ddd;padding:0.8rem;text-align:left}
         .cookie-table th{background:var(--color-primary);color:white;font-weight:600}
         .cookie-table tr:nth-child(even){background:rgba(10,35,66,0.05)}
+        .language-selector{display:flex;align-items:center;margin-left:1rem}
+        .language-selector a{color:var(--color-secondary);text-decoration:none;font-weight:500;font-size:0.9rem;padding:0.4rem 0.6rem;border-radius:4px;margin:0 0.1rem;transition:all 0.2s ease}
+        .language-selector a:hover{color:var(--color-primary);background:rgba(10,35,66,0.04)}
+        .language-selector a.active{color:var(--color-primary);background:rgba(10,35,66,0.08);font-weight:600}
+        .language-selector .separator{color:var(--color-secondary);margin:0 0.2rem;opacity:0.5}
+        @media (max-width:768px){.language-selector{margin-left:0.5rem}.language-selector a{padding:0.3rem 0.4rem;font-size:0.8rem}}
     </style>
 </head>
 <body>
@@ -87,6 +93,13 @@
                     <li><a href="/es/#expertise" class="nav-link">Experiencia</a></li>
                     <li><a href="/es/contacto.html" class="nav-link nav-cta">Contacto</a></li>
                 </ul>
+                <div class="language-selector">
+                    <a href="/ca/cookies.html">ca</a>
+                    <span class="separator">|</span>
+                    <a href="/es/cookies.html" class="active">es</a>
+                    <span class="separator">|</span>
+                    <a href="/en/cookies.html">en</a>
+                </div>
             </nav>
         </div>
     </header>
