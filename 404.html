@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <!-- Basic Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Core -->
+    <title>404 - Page Not Found | onmedic</title>
+    <meta name="description" content="The page you're looking for doesn't exist. Return to onmedic homepage.">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://onmedic.com/404.html">
+    
+    <!-- CSS -->
+    <link rel="preload" href="/src/styles/main.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/src/styles/main.min.css"></noscript>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root{--color-primary:#0A2342;--color-accent:#00D4FF;--color-secondary:#6C7293;--color-background:#F8F9FD;--color-text:#1A1A2E;--color-white:#ffffff;--font-heading:'Space Grotesk',-apple-system,BlinkMacSystemFont,sans-serif;--font-body:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;--border-radius:12px}
+        body{font-family:var(--font-body);color:var(--color-text);background:var(--color-background);margin:0;padding:0;line-height:1.6}
+        .container{max-width:1200px;margin:0 auto;padding:0 2rem}
+        .header{position:fixed;top:0;left:0;right:0;background:rgba(255,255,255,0.95);border-bottom:1px solid rgba(10,35,66,0.08);box-shadow:0 2px 20px rgba(10,35,66,0.06);z-index:1000;padding:1.2rem 0;transition:all 0.3s ease}
+        .nav-container{max-width:1200px;margin:0 auto;padding:0 2rem;display:flex;justify-content:space-between;align-items:center}
+        .logo{display:flex;align-items:center;text-decoration:none}
+        .logo img{height:65px;width:auto}
+        .main-nav{display:flex;align-items:center}
+        .nav-menu{display:flex;align-items:center;gap:0;list-style:none;margin:0;padding:0}
+        .nav-link{color:var(--color-secondary);text-decoration:none;font-weight:400;font-size:0.95rem;transition:all 0.2s ease;padding:0.8rem 1.2rem;border-radius:6px;margin:0 0.2rem}
+        .nav-link:hover{color:var(--color-primary);background:rgba(10,35,66,0.04)}
+        .nav-cta{background:var(--color-primary);color:var(--color-white)!important;padding:0.8rem 1.8rem;border-radius:6px;margin-left:0.8rem;font-weight:500}
+        .error-content{padding:8rem 0 4rem 0;text-align:center}
+        .error-container{max-width:600px;margin:0 auto;padding:0 2rem}
+        .error-code{font-family:var(--font-heading);font-size:8rem;font-weight:700;color:var(--color-accent);margin:0;line-height:1}
+        .error-title{font-family:var(--font-heading);font-size:2.5rem;color:var(--color-primary);margin:1rem 0}
+        .error-message{font-size:1.1rem;color:var(--color-text);margin-bottom:2rem}
+        .error-actions{margin:2rem 0}
+        .btn-primary{background:var(--color-primary);color:var(--color-white);padding:1rem 2rem;border-radius:8px;text-decoration:none;font-weight:500;display:inline-block;margin:0 0.5rem;transition:all 0.2s ease}
+        .btn-primary:hover{background:var(--color-accent);color:var(--color-primary)}
+        .btn-secondary{background:transparent;color:var(--color-primary);padding:1rem 2rem;border:2px solid var(--color-primary);border-radius:8px;text-decoration:none;font-weight:500;display:inline-block;margin:0 0.5rem;transition:all 0.2s ease}
+        .btn-secondary:hover{background:var(--color-primary);color:var(--color-white)}
+        .footer{background:var(--color-primary);color:var(--color-white);padding:3rem 0 1rem;margin-top:4rem}
+        .footer-bottom{text-align:center;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.1);color:rgba(255,255,255,0.7)}
+        .footer-bottom a{color:var(--color-accent);text-decoration:none}
+        .footer-bottom a:hover{text-decoration:underline}
+        @media (max-width:768px){.error-code{font-size:6rem}.error-title{font-size:2rem}.btn-primary,.btn-secondary{display:block;margin:0.5rem 0}}
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <picture>
+                    <source srcset="/src/assets/images/logo-onmedic.webp" type="image/webp">
+                    <img src="/src/assets/images/logo-onmedic.jpg" alt="onmedic - Building eHealth" width="200" height="65">
+                </picture>
+            </a>
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <li><a href="#" onclick="goToLanguageHome()" class="nav-link">Home</a></li>
+                    <li><a href="#" onclick="goToContact()" class="nav-link nav-cta">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Error Content -->
+    <main class="error-content">
+        <div class="error-container">
+            <div class="error-code">404</div>
+            <h1 class="error-title">Page Not Found</h1>
+            <p class="error-message">The page you're looking for doesn't exist or may have been moved.</p>
+            
+            <div class="error-actions">
+                <a href="#" onclick="goToLanguageHome()" class="btn-primary">Go Home</a>
+                <a href="#" onclick="goBack()" class="btn-secondary">Go Back</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> <a href="/">onmedic</a>. Building eHealth. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Dynamic year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Language detection and navigation
+        function detectLanguage() {
+            // Check for language in localStorage
+            const savedLang = localStorage.getItem('preferred-language');
+            if (savedLang && ['ca', 'es', 'en'].includes(savedLang)) {
+                return savedLang;
+            }
+            
+            // Check browser languages
+            const browserLangs = navigator.languages || [navigator.language];
+            
+            for (let lang of browserLangs) {
+                const langCode = lang.split('-')[0].toLowerCase();
+                if (langCode === 'ca') return 'ca';
+                if (langCode === 'es') return 'es';
+                if (langCode === 'en') return 'en';
+            }
+            
+            // Default fallback to English
+            return 'en';
+        }
+        
+        function goToLanguageHome() {
+            const lang = detectLanguage();
+            window.location.href = `/${lang}/`;
+        }
+        
+        function goToContact() {
+            const lang = detectLanguage();
+            const contactPages = {
+                'ca': '/ca/contacte.html',
+                'es': '/es/contacto.html',
+                'en': '/en/contact.html'
+            };
+            window.location.href = contactPages[lang];
+        }
+        
+        function goBack() {
+            if (window.history.length > 1) {
+                window.history.back();
+            } else {
+                goToLanguageHome();
+            }
+        }
+        
+        // Auto-redirect after 5 seconds if user doesn't interact
+        setTimeout(function() {
+            if (!document.hidden) {
+                goToLanguageHome();
+            }
+        }, 5000);
+    </script>
+</body>
+</html>

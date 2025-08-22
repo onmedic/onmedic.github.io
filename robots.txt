@@ -4,15 +4,15 @@ Allow: /
 # Sitemaps
 Sitemap: https://onmedic.com/sitemap.xml
 
-# Bloquejats
+# Blocked directories
 Disallow: /src/
 Disallow: /config/
 Disallow: *.tmp
 Disallow: /temp/
 Disallow: /private/
 
-# Crawling optimitzat
+# Crawling optimization
 Crawl-delay: 1
 
-# Informació contacte
+# Contact information
 # Contact: contact@onmedic.com

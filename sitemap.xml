@@ -2,54 +2,204 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
     
+    <!-- Root page with language detection -->
     <url>
         <loc>https://onmedic.com/</loc>
         <lastmod>2025-08-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
         
-        <!-- Futures versions multiidioma -->
-        <xhtml:link rel="alternate" hreflang="ca" href="https://onmedic.com/"/>
+        <xhtml:link rel="alternate" hreflang="ca" href="https://onmedic.com/ca/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://onmedic.com/es/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://onmedic.com/en/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://onmedic.com/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://onmedic.com/en/"/>
     </url>
     
+    <!-- Catalan main page -->
     <url>
-        <loc>https://onmedic.com/contacte.html</loc>
+        <loc>https://onmedic.com/ca/</loc>
+        <lastmod>2025-08-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        
+        <xhtml:link rel="alternate" hreflang="ca" href="https://onmedic.com/ca/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://onmedic.com/es/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://onmedic.com/en/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://onmedic.com/en/"/>
+    </url>
+    
+    <!-- Spanish main page -->
+    <url>
+        <loc>https://onmedic.com/es/</loc>
+        <lastmod>2025-08-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        
+        <xhtml:link rel="alternate" hreflang="ca" href="https://onmedic.com/ca/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://onmedic.com/es/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://onmedic.com/en/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://onmedic.com/en/"/>
+    </url>
+    
+    <!-- English main page -->
+    <url>
+        <loc>https://onmedic.com/en/</loc>
+        <lastmod>2025-08-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        
+        <xhtml:link rel="alternate" hreflang="ca" href="https://onmedic.com/ca/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://onmedic.com/es/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://onmedic.com/en/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://onmedic.com/en/"/>
+    </url>
+    
+    <!-- Contact pages -->
+    <url>
+        <loc>https://onmedic.com/ca/contacte.html</loc>
         <lastmod>2025-08-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         
-        <!-- Futures versions multiidioma -->
-        <xhtml:link rel="alternate" hreflang="ca" href="https://onmedic.com/contacte.html"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://onmedic.com/es/contacte.html"/>
+        <xhtml:link rel="alternate" hreflang="ca" href="https://onmedic.com/ca/contacte.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://onmedic.com/es/contacto.html"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://onmedic.com/en/contact.html"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://onmedic.com/contacte.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://onmedic.com/en/contact.html"/>
     </url>
     
-    <!-- Futures pàgines -->
-    <!--
     <url>
-        <loc>https://onmedic.com/about</loc>
-        <lastmod>2024-08-22</lastmod>
+        <loc>https://onmedic.com/es/contacto.html</loc>
+        <lastmod>2025-08-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        
+        <xhtml:link rel="alternate" hreflang="ca" href="https://onmedic.com/ca/contacte.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://onmedic.com/es/contacto.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://onmedic.com/en/contact.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://onmedic.com/en/contact.html"/>
     </url>
     
     <url>
-        <loc>https://onmedic.com/services</loc>
-        <lastmod>2024-08-22</lastmod>
+        <loc>https://onmedic.com/en/contact.html</loc>
+        <lastmod>2025-08-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        
+        <xhtml:link rel="alternate" hreflang="ca" href="https://onmedic.com/ca/contacte.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://onmedic.com/es/contacto.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://onmedic.com/en/contact.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://onmedic.com/en/contact.html"/>
+    </url>
+    
+    <!-- Legal pages - Cookies -->
+    <url>
+        <loc>https://onmedic.com/ca/cookies.html</loc>
+        <lastmod>2025-08-22</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+        
+        <xhtml:link rel="alternate" hreflang="ca" href="https://onmedic.com/ca/cookies.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://onmedic.com/es/cookies.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://onmedic.com/en/cookies.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://onmedic.com/en/cookies.html"/>
     </url>
     
     <url>
-        <loc>https://onmedic.com/contact</loc>
-        <lastmod>2024-08-22</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <loc>https://onmedic.com/es/cookies.html</loc>
+        <lastmod>2025-08-22</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+        
+        <xhtml:link rel="alternate" hreflang="ca" href="https://onmedic.com/ca/cookies.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://onmedic.com/es/cookies.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://onmedic.com/en/cookies.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://onmedic.com/en/cookies.html"/>
     </url>
-    -->
+    
+    <url>
+        <loc>https://onmedic.com/en/cookies.html</loc>
+        <lastmod>2025-08-22</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+        
+        <xhtml:link rel="alternate" hreflang="ca" href="https://onmedic.com/ca/cookies.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://onmedic.com/es/cookies.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://onmedic.com/en/cookies.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://onmedic.com/en/cookies.html"/>
+    </url>
+    
+    <!-- Legal pages - Privacy -->
+    <url>
+        <loc>https://onmedic.com/ca/privacitat.html</loc>
+        <lastmod>2025-08-22</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+        
+        <xhtml:link rel="alternate" hreflang="ca" href="https://onmedic.com/ca/privacitat.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://onmedic.com/es/privacidad.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://onmedic.com/en/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://onmedic.com/en/privacy.html"/>
+    </url>
+    
+    <url>
+        <loc>https://onmedic.com/es/privacidad.html</loc>
+        <lastmod>2025-08-22</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+        
+        <xhtml:link rel="alternate" hreflang="ca" href="https://onmedic.com/ca/privacitat.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://onmedic.com/es/privacidad.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://onmedic.com/en/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://onmedic.com/en/privacy.html"/>
+    </url>
+    
+    <url>
+        <loc>https://onmedic.com/en/privacy.html</loc>
+        <lastmod>2025-08-22</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+        
+        <xhtml:link rel="alternate" hreflang="ca" href="https://onmedic.com/ca/privacitat.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://onmedic.com/es/privacidad.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://onmedic.com/en/privacy.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://onmedic.com/en/privacy.html"/>
+    </url>
+    
+    <!-- Legal pages - Terms -->
+    <url>
+        <loc>https://onmedic.com/ca/termes.html</loc>
+        <lastmod>2025-08-22</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+        
+        <xhtml:link rel="alternate" hreflang="ca" href="https://onmedic.com/ca/termes.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://onmedic.com/es/terminos.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://onmedic.com/en/terms.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://onmedic.com/en/terms.html"/>
+    </url>
+    
+    <url>
+        <loc>https://onmedic.com/es/terminos.html</loc>
+        <lastmod>2025-08-22</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+        
+        <xhtml:link rel="alternate" hreflang="ca" href="https://onmedic.com/ca/termes.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://onmedic.com/es/terminos.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://onmedic.com/en/terms.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://onmedic.com/en/terms.html"/>
+    </url>
+    
+    <url>
+        <loc>https://onmedic.com/en/terms.html</loc>
+        <lastmod>2025-08-22</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+        
+        <xhtml:link rel="alternate" hreflang="ca" href="https://onmedic.com/ca/termes.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://onmedic.com/es/terminos.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://onmedic.com/en/terms.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://onmedic.com/en/terms.html"/>
+    </url>
     
 </urlset>
