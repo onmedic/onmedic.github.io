@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔧 EXPERTESA FIX - Diagnostic Tool</title>
+    <style>
+        body {
+            font-family: monospace;
+            background: #1a1a1a;
+            color: #00ff00;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #000;
+            padding: 30px;
+            border-radius: 10px;
+            border: 2px solid #00ff00;
+        }
+        h1 {
+            color: #ff0000;
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+        .status {
+            background: #111;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+            border: 1px solid #333;
+        }
+        .success { color: #00ff00; }
+        .error { color: #ff0000; }
+        .warning { color: #ffaa00; }
+        .info { color: #00aaff; }
+        
+        .action-button {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 10px 5px;
+            background: #333;
+            color: #00ff00;
+            border: 2px solid #00ff00;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .action-button:hover {
+            background: #00ff00;
+            color: #000;
+        }
+        .danger {
+            border-color: #ff0000;
+            color: #ff0000;
+        }
+        .danger:hover {
+            background: #ff0000;
+            color: #fff;
+        }
+        
+        .diagnostic-results {
+            background: #0a0a0a;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            border: 1px solid #333;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        
+        .fix-section {
+            background: #001122;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            border: 1px solid #0066aa;
+        }
+        
+        pre {
+            background: #222;
+            padding: 10px;
+            border-radius: 3px;
+            overflow-x: auto;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔧 EXPERTESA FIX - Production Issue Diagnostic</h1>
+        
+        <div class="status">
+            <h3>📋 Problem Summary</h3>
+            <p><strong>Issue:</strong> L'àrea d'expertesa només mostra icones, sense text (títols ni descripcions)</p>
+            <p><strong>Expected:</strong> 6 cards amb títols i descripcions visibles</p>
+            <p><strong>Actual:</strong> Només es veuen els icones SVG</p>
+        </div>
+
+        <div class="action-button" onclick="runDiagnostic()">🔍 Run Full Diagnostic</div>
+        <div class="action-button" onclick="checkFonts()">📝 Check Font Loading</div>
+        <div class="action-button" onclick="checkCSS()">🎨 Check CSS Loading</div>
+        <div class="action-button" onclick="fixForcedReload()">🔄 Force Reload with Cache Clear</div>
+        <div class="action-button danger" onclick="emergencyFix()">⚡ Emergency Fix</div>
+        
+        <div class="diagnostic-results" id="results"></div>
+        
+        <div class="fix-section">
+            <h3>🔧 Possible Fixes</h3>
+            <div id="fixes"></div>
+        </div>
+        
+        <div class="fix-section">
+            <h3>📖 Manual Debug Steps</h3>
+            <ol>
+                <li><strong>F12 Developer Tools:</strong> Check Console for errors</li>
+                <li><strong>Network Tab:</strong> Verify CSS/Font files are loading (200 status)</li>
+                <li><strong>Elements Tab:</strong> Inspect .expertise-card elements</li>
+                <li><strong>Computed Styles:</strong> Check if h3 and p have proper display/visibility</li>
+                <li><strong>Hard Refresh:</strong> Ctrl+Shift+R or Cmd+Shift+R</li>
+            </ol>
+        </div>
+    </div>
+
+    <script>
+        const log = (message, type = 'info') => {
+            const results = document.getElementById('results');
+            const timestamp = new Date().toLocaleTimeString();
+            const className = type === 'error' ? 'error' : type === 'warning' ? 'warning' : type === 'success' ? 'success' : 'info';
+            results.innerHTML += `<div class="${className}">[${timestamp}] ${message}</div>`;
+            results.scrollTop = results.scrollHeight;
+            console.log(`EXPERTESA_FIX: ${message}`);
+        };
+
+        const addFix = (title, description, code = null) => {
+            const fixes = document.getElementById('fixes');
+            const fixDiv = document.createElement('div');
+            fixDiv.innerHTML = `
+                <h4 style="color: #ffaa00;">${title}</h4>
+                <p>${description}</p>
+                ${code ? `<pre><code>${code}</code></pre>` : ''}
+            `;
+            fixes.appendChild(fixDiv);
+        };
+
+        async function runDiagnostic() {
+            log('🔍 Starting comprehensive diagnostic...', 'info');
+            document.getElementById('fixes').innerHTML = '';
+            
+            // Check current page structure
+            checkPageStructure();
+            
+            // Check CSS loading
+            await checkCSSLoading();
+            
+            // Check font loading
+            await checkFontLoading();
+            
+            // Check JavaScript
+            checkJavaScript();
+            
+            // Check network resources
+            await checkNetworkResources();
+            
+            // Final recommendations
+            generateRecommendations();
+        }
+
+        function checkPageStructure() {
+            log('📋 Checking page structure...', 'info');
+            
+            // Check if we're on the right page
+            const currentPath = window.location.pathname;
+            if (!currentPath.includes('/ca/')) {
+                log('⚠️ Not on Catalan version. Current path: ' + currentPath, 'warning');
+                addFix('Wrong Language Version', 
+                      'Navigate to <a href="/ca/">https://onmedic.com/ca/</a> to see the Catalan version with expertesa section.',
+                      'window.location.href = "/ca/"');
+                return;
+            }
+            
+            // Check expertise section exists
+            const expertiseSection = document.querySelector('#expertise');
+            if (!expertiseSection) {
+                log('❌ Expertise section (#expertise) not found on page!', 'error');
+                addFix('Missing Section', 'The expertise section with id="expertise" is not present in the DOM');
+                return;
+            }
+            
+            log('✅ Expertise section found', 'success');
+            
+            // Check expertise cards
+            const expertiseCards = document.querySelectorAll('.expertise-card');
+            log(`📊 Found ${expertiseCards.length} expertise cards`, expertiseCards.length === 6 ? 'success' : 'warning');
+            
+            if (expertiseCards.length === 0) {
+                log('❌ No expertise cards found!', 'error');
+                addFix('Missing Cards', 'No elements with class .expertise-card found. Check if HTML is loaded correctly.');
+                return;
+            }
+            
+            // Check card content
+            let visibleTextCards = 0;
+            expertiseCards.forEach((card, index) => {
+                const h3 = card.querySelector('h3');
+                const p = card.querySelector('p');
+                const svg = card.querySelector('svg');
+                
+                const hasText = h3 && h3.textContent.trim().length > 0;
+                const hasDescription = p && p.textContent.trim().length > 0;
+                const hasIcon = svg !== null;
+                
+                log(`Card ${index + 1}: Icon=${hasIcon ? '✅' : '❌'} Title=${hasText ? '✅' : '❌'} Desc=${hasDescription ? '✅' : '❌'}`, 
+                    hasText && hasDescription ? 'success' : 'warning');
+                
+                if (hasText && hasDescription) visibleTextCards++;
+                
+                if (hasIcon && !hasText) {
+                    log(`❌ Card ${index + 1}: Has icon but no visible text!`, 'error');
+                }
+            });
+            
+            if (visibleTextCards === 0) {
+                log('🚨 CRITICAL: No cards have visible text content!', 'error');
+                addFix('Text Visibility Issue', 
+                      'All cards have icons but no visible text. This is likely a CSS visibility/display issue.',
+                      'Check .expertise-card h3 and .expertise-card p styles in developer tools');
+            }
+        }
+
+        async function checkCSSLoading() {
+            log('🎨 Checking CSS loading...', 'info');
+            
+            // Check if main CSS is loaded
+            const cssFiles = [
+                '/src/styles/main.css',
+                '/src/styles/main.min.css'
+            ];
+            
+            for (const cssFile of cssFiles) {
+                try {
+                    const response = await fetch(cssFile, { method: 'HEAD' });
+                    if (response.ok) {
+                        log(`✅ CSS file loaded: ${cssFile} (${response.status})`, 'success');
+                    } else {
+                        log(`❌ CSS file error: ${cssFile} (${response.status})`, 'error');
+                        addFix('CSS Loading Error', 
+                              `CSS file ${cssFile} returned status ${response.status}. This could cause styling issues.`);
+                    }
+                } catch (error) {
+                    log(`❌ Failed to check CSS: ${cssFile} - ${error.message}`, 'error');
+                }
+            }
+            
+            // Check computed styles
+            const sampleCard = document.querySelector('.expertise-card');
+            if (sampleCard) {
+                const styles = window.getComputedStyle(sampleCard);
+                log(`Card background: ${styles.background}`, 'info');
+                log(`Card display: ${styles.display}`, 'info');
+                log(`Card visibility: ${styles.visibility}`, 'info');
+                
+                const h3 = sampleCard.querySelector('h3');
+                if (h3) {
+                    const h3Styles = window.getComputedStyle(h3);
+                    log(`H3 color: ${h3Styles.color}`, 'info');
+                    log(`H3 font-size: ${h3Styles.fontSize}`, 'info');
+                    log(`H3 display: ${h3Styles.display}`, 'info');
+                    log(`H3 visibility: ${h3Styles.visibility}`, 'info');
+                    
+                    if (h3Styles.color === 'rgba(0, 0, 0, 0)' || h3Styles.visibility === 'hidden' || h3Styles.display === 'none') {
+                        log('🚨 H3 styling issue detected!', 'error');
+                        addFix('H3 Visibility Issue', 
+                              'The h3 elements have problematic styles that make them invisible.',
+                              `h3 current styles: color=${h3Styles.color}, visibility=${h3Styles.visibility}, display=${h3Styles.display}`);
+                    }
+                }
+            }
+        }
+
+        async function checkFontLoading() {
+            log('📝 Checking font loading...', 'info');
+            
+            // Check if fonts are loaded
+            if (document.fonts) {
+                try {
+                    await document.fonts.ready;
+                    log('✅ Fonts are ready', 'success');
+                    
+                    document.fonts.forEach(font => {
+                        log(`Font loaded: ${font.family} ${font.style} ${font.weight}`, 'info');
+                    });
+                    
+                } catch (error) {
+                    log(`❌ Font loading error: ${error.message}`, 'error');
+                    addFix('Font Loading Issue', 
+                          'Fonts may not be loading correctly. This could cause text to be invisible.');
+                }
+            } else {
+                log('⚠️ Font Loading API not supported', 'warning');
+            }
+            
+            // Check Google Fonts
+            const fontLinks = document.querySelectorAll('link[href*="fonts.googleapis.com"]');
+            log(`Found ${fontLinks.length} Google Font links`, fontLinks.length > 0 ? 'success' : 'warning');
+        }
+
+        function checkJavaScript() {
+            log('🔧 Checking JavaScript...', 'info');
+            
+            // Check for JS errors
+            let jsErrors = 0;
+            const originalError = console.error;
+            console.error = function(...args) {
+                jsErrors++;
+                log(`JS Error detected: ${args.join(' ')}`, 'error');
+                originalError.apply(console, args);
+            };
+            
+            // Check animation library
+            if (typeof AOS !== 'undefined') {
+                log('✅ AOS animation library loaded', 'success');
+            } else {
+                log('⚠️ AOS animation library not loaded', 'warning');
+            }
+            
+            // Check custom scripts
+            const scripts = document.querySelectorAll('script[src*="/src/scripts/"]');
+            log(`Found ${scripts.length} custom script files`, 'info');
+        }
+
+        async function checkNetworkResources() {
+            log('🌐 Checking network resources...', 'info');
+            
+            // Check if we can reach the main resources
+            const resources = [
+                '/src/styles/main.css',
+                '/src/styles/main.min.css',
+                '/src/scripts/main.min.js',
+                '/src/scripts/animations.min.js'
+            ];
+            
+            for (const resource of resources) {
+                try {
+                    const response = await fetch(resource, { method: 'HEAD', cache: 'no-cache' });
+                    log(`${resource}: ${response.ok ? '✅' : '❌'} (${response.status})`, response.ok ? 'success' : 'error');
+                } catch (error) {
+                    log(`${resource}: ❌ Failed to load`, 'error');
+                }
+            }
+        }
+
+        function generateRecommendations() {
+            log('🎯 Generating recommendations...', 'info');
+            
+            addFix('Quick Fix #1 - Hard Refresh', 
+                  'Try a hard refresh to clear browser cache',
+                  'Ctrl+Shift+R (Windows/Linux) or Cmd+Shift+R (Mac)');
+                  
+            addFix('Quick Fix #2 - Incognito Mode', 
+                  'Try opening the page in incognito/private mode to bypass cache issues');
+                  
+            addFix('Developer Fix - CSS Override', 
+                  'If text is invisible, try this temporary CSS fix:',
+                  `.expertise-card h3 { 
+    color: white !important; 
+    display: block !important; 
+    visibility: visible !important; 
+}
+.expertise-card p { 
+    color: rgba(255,255,255,0.8) !important; 
+    display: block !important; 
+    visibility: visible !important; 
+}`);
+                  
+            addFix('Production Fix - Cache Headers', 
+                  'Add cache-busting parameters to CSS/JS files or update cache headers');
+        }
+
+        function checkFonts() {
+            log('🔤 Detailed font check...', 'info');
+            checkFontLoading();
+        }
+
+        function checkCSS() {
+            log('🎨 Detailed CSS check...', 'info');
+            checkCSSLoading();
+        }
+
+        function fixForcedReload() {
+            log('🔄 Forcing reload with cache clear...', 'warning');
+            // Add cache busting parameter
+            const url = new URL(window.location);
+            url.searchParams.set('nocache', Date.now());
+            window.location.href = url.toString();
+        }
+
+        function emergencyFix() {
+            log('⚡ Applying emergency CSS fix...', 'warning');
+            
+            const emergencyCSS = `
+                .expertise-card h3 {
+                    color: white !important;
+                    display: block !important;
+                    visibility: visible !important;
+                    font-size: 1.4rem !important;
+                    margin-bottom: 1rem !important;
+                    font-weight: 600 !important;
+                }
+                .expertise-card p {
+                    color: rgba(255,255,255,0.8) !important;
+                    display: block !important;
+                    visibility: visible !important;
+                    line-height: 1.6 !important;
+                }
+                .expertise-card {
+                    background: rgba(255,255,255,0.1) !important;
+                    padding: 2.5rem 2rem !important;
+                    border-radius: 12px !important;
+                    text-align: center !important;
+                }
+            `;
+            
+            const style = document.createElement('style');
+            style.textContent = emergencyCSS;
+            document.head.appendChild(style);
+            
+            log('✅ Emergency CSS applied! Check the expertise section now.', 'success');
+            
+            // Scroll to expertise section
+            const expertiseSection = document.querySelector('#expertise');
+            if (expertiseSection) {
+                expertiseSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Auto-run basic diagnostic on page load
+        window.addEventListener('load', () => {
+            log('🚀 Expertesa Fix Tool loaded', 'info');
+            log('Click "Run Full Diagnostic" to start troubleshooting', 'info');
+            
+            // Quick check if we're on the wrong page
+            if (!window.location.pathname.includes('/ca/')) {
+                log('⚠️ You may need to go to /ca/ to see the expertesa section', 'warning');
+            }
+        });
+    </script>
+</body>
+</html>
