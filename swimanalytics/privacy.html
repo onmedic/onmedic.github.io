@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - SwimAnalytics</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #1d1d1f;
+            background: #f5f5f7;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        .last-updated {
+            color: #6e6e73;
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            color: #000;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            color: #1d1d1f;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #1d1d1f;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            font-weight: 600;
+        }
+
+        .highlight {
+            background: #e8f4fd;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #0071e3;
+        }
+
+        .contact {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f5f5f7;
+            border-radius: 8px;
+        }
+
+        a {
+            color: #0071e3;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Last updated: October 2, 2025</p>
+
+        <div class="highlight">
+            <p><strong>Your Privacy Matters</strong></p>
+            <p>SwimAnalytics is designed with privacy at its core. We don't collect, store, or transmit any of your personal data. Everything stays on your device.</p>
+        </div>
+
+        <h2>1. Information We Don't Collect</h2>
+        <p>SwimAnalytics is a <strong>privacy-first application</strong>. We want to be clear about what we don't do:</p>
+        <ul>
+            <li><strong>No Account Registration:</strong> You never need to create an account or provide an email address</li>
+            <li><strong>No Personal Data Collection:</strong> We don't collect names, emails, phone numbers, or any personal identifiers</li>
+            <li><strong>No Analytics or Tracking:</strong> We don't use third-party analytics services to track your behavior</li>
+            <li><strong>No Data Servers:</strong> We don't operate any servers that store your workout data</li>
+            <li><strong>No Sharing:</strong> We have nothing to share because we collect nothing</li>
+        </ul>
+
+        <h2>2. How SwimAnalytics Works</h2>
+
+        <h3>2.1 Local Storage Only</h3>
+        <p>All your data is stored locally on your device using:</p>
+        <ul>
+            <li><strong>Core Data:</strong> Your workout history and analytics are stored in a local database on your iPhone</li>
+            <li><strong>UserDefaults:</strong> App preferences and trial information are stored locally</li>
+            <li><strong>No Cloud Sync:</strong> Your data never leaves your device unless you explicitly export it</li>
+        </ul>
+
+        <h3>2.2 HealthKit Integration</h3>
+        <p>SwimAnalytics integrates with Apple HealthKit to read your swimming workouts:</p>
+        <ul>
+            <li>You must explicitly grant permission to access HealthKit data</li>
+            <li>We only read swimming workout data that you choose to sync</li>
+            <li>HealthKit data is processed locally and never sent to external servers</li>
+            <li>You can revoke HealthKit access at any time in iOS Settings</li>
+        </ul>
+
+        <h3>2.3 Subscription Management</h3>
+        <p>SwimAnalytics offers in-app subscriptions managed by Apple:</p>
+        <ul>
+            <li><strong>Apple handles all payments:</strong> Your payment information is processed by Apple, not by us</li>
+            <li><strong>No payment data access:</strong> We never see or store your credit card or payment details</li>
+            <li><strong>Trial tracking:</strong> The 7-day free trial is tracked locally on your device using the first launch date</li>
+            <li><strong>Subscription verification:</strong> We verify your subscription status through Apple's StoreKit framework (local verification only)</li>
+        </ul>
+
+        <h2>3. Data You Generate</h2>
+
+        <h3>3.1 Workout Analytics</h3>
+        <p>When you sync workouts from HealthKit, SwimAnalytics calculates:</p>
+        <ul>
+            <li>Swimming pace and distance metrics</li>
+            <li>Critical Swim Speed (CSS)</li>
+            <li>Training Stress Score (TSS)</li>
+            <li>Training load (CTL/ATL/TSB)</li>
+            <li>Personal records and training zones</li>
+        </ul>
+        <p><strong>All calculations are performed locally on your device.</strong> This data is stored in your device's local database and is never transmitted to external servers.</p>
+
+        <h3>3.2 Data Export</h3>
+        <p>You can export your workout data in multiple formats (JSON, CSV, HTML, PDF):</p>
+        <ul>
+            <li>Exports are generated locally on your device</li>
+            <li>You control where exported files are saved (Files app, email, etc.)</li>
+            <li>We don't receive copies of your exported data</li>
+        </ul>
+
+        <h2>4. Third-Party Services</h2>
+
+        <h3>4.1 Apple Services</h3>
+        <p>SwimAnalytics uses Apple's built-in frameworks:</p>
+        <ul>
+            <li><strong>HealthKit:</strong> For reading swimming workout data (Apple's privacy policy applies)</li>
+            <li><strong>StoreKit:</strong> For managing subscriptions (Apple's privacy policy applies)</li>
+            <li><strong>App Store:</strong> For app distribution and updates (Apple's privacy policy applies)</li>
+        </ul>
+
+        <h3>4.2 No Third-Party Analytics</h3>
+        <p>We deliberately chose not to integrate:</p>
+        <ul>
+            <li>Google Analytics</li>
+            <li>Firebase Analytics</li>
+            <li>Facebook SDK</li>
+            <li>Crashlytics or error reporting services</li>
+            <li>Any advertising networks or trackers</li>
+        </ul>
+
+        <h2>5. Children's Privacy</h2>
+        <p>SwimAnalytics does not knowingly collect any information from anyone, including children under 13. Since we don't collect any data at all, the app is safe for users of all ages.</p>
+
+        <h2>6. Data Security</h2>
+        <p>While we don't collect or transmit data, your local data is protected by:</p>
+        <ul>
+            <li><strong>iOS Encryption:</strong> Your device's built-in encryption protects all local data</li>
+            <li><strong>App Sandbox:</strong> iOS isolates SwimAnalytics from other apps</li>
+            <li><strong>Secure Storage:</strong> Core Data and UserDefaults are stored in your app's protected container</li>
+        </ul>
+
+        <h2>7. Your Rights</h2>
+        <p>Since all data is stored locally on your device, you have complete control:</p>
+        <ul>
+            <li><strong>Access:</strong> All your data is accessible within the app</li>
+            <li><strong>Export:</strong> Export your data anytime in multiple formats</li>
+            <li><strong>Delete:</strong> Delete the app to remove all local data</li>
+            <li><strong>HealthKit Permissions:</strong> Revoke access in iOS Settings → Privacy & Security → Health</li>
+        </ul>
+
+        <h2>8. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. We will notify you of any changes by:</p>
+        <ul>
+            <li>Posting the new Privacy Policy on this page</li>
+            <li>Updating the "Last updated" date at the top</li>
+            <li>Providing an in-app notice for material changes</li>
+        </ul>
+        <p>You are advised to review this Privacy Policy periodically for any changes.</p>
+
+        <h2>9. Legal Basis (GDPR Compliance)</h2>
+        <p>For users in the European Economic Area (EEA):</p>
+        <ul>
+            <li>We don't process any personal data, so GDPR data processing requirements don't apply</li>
+            <li>No consent is required for data collection because we don't collect data</li>
+            <li>You have no data to request, correct, or delete because we store nothing externally</li>
+        </ul>
+
+        <h2>10. California Privacy Rights (CCPA)</h2>
+        <p>For California residents:</p>
+        <ul>
+            <li>We don't sell personal information because we don't collect it</li>
+            <li>We don't share personal information with third parties</li>
+            <li>You have nothing to request, delete, or opt-out of because we collect nothing</li>
+        </ul>
+
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy, please contact us:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:privacy@onmedic.com">privacy@onmedic.com</a></li>
+                <li><strong>Website:</strong> <a href="https://onmedic.com">onmedic.com</a></li>
+            </ul>
+        </div>
+
+        <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #d2d2d7; color: #6e6e73; font-size: 0.9rem;">
+            <p><strong>SwimAnalytics</strong> is committed to protecting your privacy. This policy reflects our core principle: <strong>Your data belongs to you, and only you.</strong></p>
+        </div>
+    </div>
+</body>
+</html>
