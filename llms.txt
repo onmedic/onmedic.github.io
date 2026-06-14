@@ -1,0 +1,24 @@
+# onmedic
+
+onmedic is a health-tech studio operated by ArnoHealth S.L. (Barcelona, EU), in eHealth since 2000. It builds eHealth systems for hospitals, research centers, pharmaceutical labs and medical centers — discreetly, without naming clients — and ships its own line of privacy-first medical and sports apps.
+
+Through-line: privacy-first / on-device by design.
+
+## Key pages
+
+- Home: https://onmedic.com/
+- What we build (services): https://onmedic.com/#institutions
+- Products we ship: https://onmedic.com/products/
+- About the studio (ArnoHealth S.L., founder Albert Arnó): https://onmedic.com/about/
+- Contact: https://onmedic.com/contact/
+
+## Product line (ships its own products)
+
+- Sports analytics — AnalyticsZone (Swim, Run, Bike, Hike, Walk, SwimTrainer): https://analyticszone.app
+- Medical apps: Pelvisana (https://www.pelvisana.com), CardioAnalytics, Health Analytics, Sleep Analytics
+
+## Entity
+
+- Legal entity: ArnoHealth S.L., Barcelona, Spain (EU)
+- Founder: Albert Arnó
+- In eHealth since 2000

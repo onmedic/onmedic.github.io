@@ -1,18 +1,4 @@
 User-agent: *
 Allow: /
 
-# Sitemaps
-Sitemap: https://onmedic.com/sitemap.xml
-
-# Blocked directories
-Disallow: /src/
-Disallow: /config/
-Disallow: *.tmp
-Disallow: /temp/
-Disallow: /private/
-
-# Crawling optimization
-Crawl-delay: 1
-
-# Contact information
-# Contact: contact@onmedic.com
+Sitemap: https://onmedic.com/sitemap-index.xml
