@@ -11,6 +11,11 @@ Through-line: privacy-first / on-device by design.
 - Products we ship: https://onmedic.com/products/
 - About the studio (ArnoHealth S.L., founder Albert Arnó): https://onmedic.com/about/
 - Contact: https://onmedic.com/contact/
+- Mobile App Legal Policies (Generic Terms & Privacy): https://onmedic.com/terms-privacy-generics/
+  - Local Apps Terms of Use: https://onmedic.com/apps/local-terms/
+  - Local Apps Privacy Policy: https://onmedic.com/apps/local-privacy/
+  - Online Apps Terms of Use: https://onmedic.com/apps/online-terms/
+  - Online Apps Privacy Policy: https://onmedic.com/apps/online-privacy/
 
 ## Product line (ships its own products)
 
