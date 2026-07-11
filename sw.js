@@ -1,9 +1,9 @@
 // onmedic Service Worker
 // Cache strategy per millor performance
 
-const CACHE_NAME = 'onmedic-v2.0.0-ULTRAFIX';
-const STATIC_CACHE = 'onmedic-static-v2.0.0-ULTRAFIX';
-const DYNAMIC_CACHE = 'onmedic-dynamic-v2.0.0-ULTRAFIX';
+const CACHE_NAME = 'onmedic-v2.0.1-INSIGHTS';
+const STATIC_CACHE = 'onmedic-static-v2.0.1-INSIGHTS';
+const DYNAMIC_CACHE = 'onmedic-dynamic-v2.0.1-INSIGHTS';
 
 // Recursos per cachear immediatament (SENSE index.html per evitar problemes)
 const urlsToCache = [
@@ -11,6 +11,8 @@ const urlsToCache = [
     '/src/styles/main.min.css',
     '/src/styles/contact.css',
     '/src/styles/contact.min.css',
+    '/src/styles/article.css',
+    '/src/styles/article.min.css',
     '/src/scripts/main.js',
     '/src/scripts/main.min.js',
     '/src/scripts/animations.js',
@@ -39,7 +41,7 @@ self.addEventListener('install', event => {
 
 // Activate event - neteja caches antics (ULTRAFIX - clear tot)
 self.addEventListener('activate', event => {
-    console.log('Service Worker: Activating ULTRAFIX v2.0.0...');
+    console.log('Service Worker: Activating INSIGHTS v2.0.1...');
     
     event.waitUntil(
         caches.keys().then(cacheNames => {

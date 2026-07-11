@@ -201,5 +201,38 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://onmedic.com/en/terms.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://onmedic.com/en/terms.html"/>
     </url>
-    
+    <!-- Editorial insight: walking mobility metrics -->
+    <url>
+        <loc>https://onmedic.com/ca/insights/metriques-mobilitat-marxa.html</loc>
+        <lastmod>2026-07-11</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="ca" href="https://onmedic.com/ca/insights/metriques-mobilitat-marxa.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://onmedic.com/es/insights/metricas-movilidad-marcha.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://onmedic.com/en/insights/walking-mobility-metrics.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://onmedic.com/en/insights/walking-mobility-metrics.html"/>
+    </url>
+
+    <url>
+        <loc>https://onmedic.com/es/insights/metricas-movilidad-marcha.html</loc>
+        <lastmod>2026-07-11</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="ca" href="https://onmedic.com/ca/insights/metriques-mobilitat-marxa.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://onmedic.com/es/insights/metricas-movilidad-marcha.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://onmedic.com/en/insights/walking-mobility-metrics.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://onmedic.com/en/insights/walking-mobility-metrics.html"/>
+    </url>
+
+    <url>
+        <loc>https://onmedic.com/en/insights/walking-mobility-metrics.html</loc>
+        <lastmod>2026-07-11</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="ca" href="https://onmedic.com/ca/insights/metriques-mobilitat-marxa.html"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://onmedic.com/es/insights/metricas-movilidad-marcha.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://onmedic.com/en/insights/walking-mobility-metrics.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://onmedic.com/en/insights/walking-mobility-metrics.html"/>
+    </url>
+
 </urlset>
