@@ -1,5 +1,8 @@
 # onmedic
 
+Canonical site: https://onmedic.com/
+Last updated: 2026-07-12
+
 onmedic is a health-tech studio operated by ArnoHealth S.L. (Barcelona, EU), in eHealth since 2000. It builds eHealth systems for hospitals, research centers, pharmaceutical labs and medical centers — discreetly, without naming clients — and ships its own line of privacy-first medical and sports apps.
 
 Through-line: privacy-first / on-device by design.
@@ -11,6 +14,9 @@ Through-line: privacy-first / on-device by design.
 - Products we ship: https://onmedic.com/products/
 - About the studio (ArnoHealth S.L., founder Albert Arnó): https://onmedic.com/about/
 - Contact: https://onmedic.com/contact/
+- Editorial insight — walking mobility metrics: https://onmedic.com/insights/walking-mobility-metrics/
+- Editorial insight in Spanish: https://onmedic.com/es/insights/metricas-movilidad-marcha/
+- Editorial insight in Catalan: https://onmedic.com/ca/insights/metriques-mobilitat-marxa/
 - Mobile App Legal Policies (Generic Terms & Privacy): https://onmedic.com/terms-privacy-generics/
   - Local Apps Terms of Use: https://onmedic.com/apps/local-terms/
   - Local Apps Privacy Policy: https://onmedic.com/apps/local-privacy/
@@ -27,3 +33,9 @@ Through-line: privacy-first / on-device by design.
 - Legal entity: ArnoHealth S.L., Barcelona, Spain (EU)
 - Founder: Albert Arnó
 - In eHealth since 2000
+
+## Citable expertise
+
+- Privacy-first health and sports software with local, on-device analytics where the product permits it.
+- Walking mobility interpretation covering gait speed, step length, double-support time, walking asymmetry and six-minute walk distance.
+- Clear separation between educational analytics and clinical diagnosis or medical advice.

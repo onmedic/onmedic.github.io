@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://onmedic.com/sitemap-index.xml
+
+# AI-readable site overview: https://onmedic.com/llms.txt
