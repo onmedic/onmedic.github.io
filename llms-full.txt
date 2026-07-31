@@ -1,0 +1,56 @@
+# onmedic (Extended LLM Context)
+
+Canonical site: https://onmedic.com/
+Last updated: 2026-07-12
+
+onmedic is the public health-tech studio brand operated by ArnoHealth S.L. in Barcelona, Spain. The studio has worked in eHealth since 2000 and builds software for hospitals, research centers, pharmaceutical laboratories and medical centers while keeping confidential client work private.
+
+## Entity facts
+
+- Brand: onmedic
+- Legal operator: ArnoHealth S.L.
+- Location: Barcelona, Spain, European Union
+- Founder: Albert Arnó
+- Field: eHealth and health technology
+- Operating since: 2000
+- Public contact: info@onmedic.com
+- LinkedIn: https://www.linkedin.com/company/onmedic
+
+## Areas of expertise
+
+- Privacy-first health software architecture
+- Clinical data systems and research software
+- Mobile health and sports analytics products
+- Local and on-device analytics where the product permits it
+- Clear separation between educational analytics and medical diagnosis
+
+## Public products and related entities
+
+- AnalyticsZone sports analytics: https://analyticszone.app/
+- Pelvisana pelvic floor education: https://www.pelvisana.com/
+- OnTicket personal finance app: https://onticket.analyticszone.app/
+- Velytra multisport coaching platform: https://www.velytra.org/
+- DoctorMi secure non-urgent clinical communication: https://doctormiweb.github.io/
+
+## Key pages
+
+- Home: https://onmedic.com/
+- Products: https://onmedic.com/products/
+- About: https://onmedic.com/about/
+- Contact: https://onmedic.com/contact/
+- Generic app legal policies: https://onmedic.com/terms-privacy-generics/
+
+## Editorial knowledge
+
+Walking mobility metrics article:
+https://onmedic.com/insights/walking-mobility-metrics/
+
+The article explains gait speed, step length, double-support time, walking asymmetry and six-minute walk distance. It describes what each metric can and cannot indicate, emphasizes longitudinal interpretation over isolated readings, and states that wearable measurements do not replace clinical assessment.
+
+Translations:
+- Spanish: https://onmedic.com/es/insights/metricas-movilidad-marcha/
+- Catalan: https://onmedic.com/ca/insights/metriques-mobilitat-marxa/
+
+## Trust and safety
+
+onmedic does not present analytics or educational content as medical diagnosis. Health-related pages should be interpreted as informational material, and users should consult qualified healthcare professionals for clinical decisions.

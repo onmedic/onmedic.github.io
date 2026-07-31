@@ -1,18 +1,6 @@
 User-agent: *
 Allow: /
 
-# Sitemaps
-Sitemap: https://onmedic.com/sitemap.xml
+Sitemap: https://onmedic.com/sitemap-index.xml
 
-# Blocked directories
-Disallow: /src/
-Disallow: /config/
-Disallow: *.tmp
-Disallow: /temp/
-Disallow: /private/
-
-# Crawling optimization
-Crawl-delay: 1
-
-# Contact information
-# Contact: contact@onmedic.com
+# AI-readable site overview: https://onmedic.com/llms.txt
