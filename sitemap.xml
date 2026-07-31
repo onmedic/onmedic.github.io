@@ -130,6 +130,18 @@
     
     <!-- Legal pages - Privacy -->
     <url>
+        <loc>https://onmedic.com/en/blackstars/privacy/</loc>
+        <lastmod>2026-07-31</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.4</priority>
+
+        <xhtml:link rel="alternate" hreflang="ca" href="https://onmedic.com/ca/blackstars/privacy/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://onmedic.com/es/blackstars/privacy/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://onmedic.com/en/blackstars/privacy/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://onmedic.com/en/blackstars/privacy/"/>
+    </url>
+
+    <url>
         <loc>https://onmedic.com/ca/privacitat.html</loc>
         <lastmod>2025-08-22</lastmod>
         <changefreq>yearly</changefreq>
