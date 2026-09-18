@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "org.onmedic.dishmarket",
+      "sha256_cert_fingerprints": [
+        "E5:DC:7E:00:5B:C2:73:6F:5A:B2:B4:B8:1A:15:6C:E1:57:DA:C4:C7:96:E1:E7:35:17:8A:90:BC:DB:20:4D:D4"
+      ]
+    }
+  }
+]

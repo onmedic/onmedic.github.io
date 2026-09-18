@@ -1,0 +1,19 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "6LDPUZ372Q.org.onmedic.dishmarket",
+        "paths": [
+          "/dishmarketlink*",
+          "/dishmarket/*"
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": [
+      "6LDPUZ372Q.org.onmedic.dishmarket"
+    ]
+  }
+}
