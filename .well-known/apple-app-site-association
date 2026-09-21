@@ -8,12 +8,20 @@
           "/dishmarketlink*",
           "/dishmarket/*"
         ]
+      },
+      {
+        "appID": "6LDPUZ372Q.com.arnohealth.restatop",
+        "paths": [
+          "/restatoplink*",
+          "/restatop/*"
+        ]
       }
     ]
   },
   "webcredentials": {
     "apps": [
-      "6LDPUZ372Q.org.onmedic.dishmarket"
+      "6LDPUZ372Q.org.onmedic.dishmarket",
+      "6LDPUZ372Q.com.arnohealth.restatop"
     ]
   }
 }
