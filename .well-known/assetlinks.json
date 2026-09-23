@@ -19,7 +19,8 @@
       "namespace": "android_app",
       "package_name": "com.arnohealth.restatop",
       "sha256_cert_fingerprints": [
-        "33:80:59:54:34:FD:61:FE:C8:F8:C9:C5:8E:14:66:1F:D5:DF:6D:0C:49:58:69:05:5C:C4:FA:EA:02:A8:3D:D3"
+        "33:80:59:54:34:FD:61:FE:C8:F8:C9:C5:8E:14:66:1F:D5:DF:6D:0C:49:58:69:05:5C:C4:FA:EA:02:A8:3D:D3",
+        "CF:A9:45:6D:4C:7E:AC:6A:EB:52:5E:A6:88:F9:5E:9A:40:0F:CD:EB:01:98:67:B0:98:E7:6A:41:FE:E7:66:3E"
       ]
     }
   }
