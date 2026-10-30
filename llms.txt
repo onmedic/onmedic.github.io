@@ -14,9 +14,13 @@ Through-line: privacy-first / on-device by design.
 - Products we ship: https://onmedic.com/products/
 - About the studio (ArnoHealth S.L., founder Albert Arnó): https://onmedic.com/about/
 - Contact: https://onmedic.com/contact/
+- Insights index (en/es/ca): https://onmedic.com/insights/ · https://onmedic.com/es/insights/ · https://onmedic.com/ca/insights/
 - Editorial insight — walking mobility metrics: https://onmedic.com/insights/walking-mobility-metrics/
 - Editorial insight in Spanish: https://onmedic.com/es/insights/metricas-movilidad-marcha/
 - Editorial insight in Catalan: https://onmedic.com/ca/insights/metriques-mobilitat-marxa/
+- Editorial insight — Apple Watch hypertension notifications: https://onmedic.com/insights/apple-watch-hypertension-notifications/
+- Editorial insight in Spanish: https://onmedic.com/es/insights/avisos-hipertension-apple-watch/
+- Editorial insight in Catalan: https://onmedic.com/ca/insights/avisos-hipertensio-apple-watch/
 - Mobile App Legal Policies (Generic Terms & Privacy): https://onmedic.com/terms-privacy-generics/
   - Local Apps Terms of Use: https://onmedic.com/apps/local-terms/
   - Local Apps Privacy Policy: https://onmedic.com/apps/local-privacy/
