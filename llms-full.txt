@@ -29,7 +29,7 @@ onmedic is the public health-tech studio brand operated by ArnoHealth S.L. in Ba
 - AnalyticsZone sports analytics: https://analyticszone.app/
 - Pelvisana pelvic floor education: https://www.pelvisana.com/
 - Velytra multisport coaching platform: https://www.velytra.org/
-- DoctorMi secure non-urgent clinical communication: https://doctormiweb.github.io/
+- DoctorMi secure non-urgent clinical communication: https://doctormi.net/
 
 ## Key pages
 

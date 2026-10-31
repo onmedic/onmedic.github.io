@@ -30,7 +30,7 @@ Through-line: privacy-first / on-device by design.
 ## Product line (ships its own products)
 
 - Sports analytics — AnalyticsZone (Swim, Run, Bike, Hike, Walk, SwimTrainer): https://analyticszone.app
-- Medical apps: Pelvisana (https://www.pelvisana.com), CardioAnalytics, Health Analytics, Sleep Analytics
+- Medical apps: Pelvisana (https://www.pelvisana.com), DiAlgo, family messages for older and dependent people (https://dialgo.net/), CardioAnalytics, Health Analytics, Sleep Analytics
 
 ## Entity
 
