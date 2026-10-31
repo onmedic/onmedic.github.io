@@ -35,6 +35,7 @@ Through-line: privacy-first / on-device by design.
 ## Entity
 
 - Legal entity: ArnoHealth S.L., Barcelona, Spain (EU)
+- LinkedIn company page: https://www.linkedin.com/company/onmedic-com/ (not to be confused with the unrelated Brazilian clinic "Onmedic")
 - Founder: Albert Arnó (https://albertarno.net/about/)
 - In eHealth since 2000
 - Portfolio companies that name onmedic as parent: DiAlgo (https://dialgo.net/), DoctorMi (https://doctormi.net/)
