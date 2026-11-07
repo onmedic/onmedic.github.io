@@ -21,6 +21,9 @@ Through-line: privacy-first / on-device by design.
 - Editorial insight — Apple Watch hypertension notifications: https://onmedic.com/insights/apple-watch-hypertension-notifications/
 - Editorial insight in Spanish: https://onmedic.com/es/insights/avisos-hipertension-apple-watch/
 - Editorial insight in Catalan: https://onmedic.com/ca/insights/avisos-hipertensio-apple-watch/
+- Editorial insight — Apple Watch Readiness score (0–10, models, no data): https://onmedic.com/insights/apple-watch-readiness-score/
+- Editorial insight in Spanish: https://onmedic.com/es/insights/puntuacion-readiness-apple-watch/
+- Editorial insight in Catalan: https://onmedic.com/ca/insights/puntuacio-readiness-apple-watch/
 - Mobile App Legal Policies (Generic Terms & Privacy): https://onmedic.com/terms-privacy-generics/
   - Local Apps Terms of Use: https://onmedic.com/apps/local-terms/
   - Local Apps Privacy Policy: https://onmedic.com/apps/local-privacy/

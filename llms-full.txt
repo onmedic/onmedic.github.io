@@ -46,9 +46,29 @@ https://onmedic.com/insights/walking-mobility-metrics/
 
 The article explains gait speed, step length, double-support time, walking asymmetry and six-minute walk distance. It describes what each metric can and cannot indicate, emphasizes longitudinal interpretation over isolated readings, and states that wearable measurements do not replace clinical assessment.
 
+It also gives reference values from Apple's 2022 validation paper (walking asymmetry threshold of about 35%, typical double support time of 20–40%, usual walking speed around 1.3 m/s) and explains the OK, Low and Very Low walking steadiness levels.
+
 Translations:
 - Spanish: https://onmedic.com/es/insights/metricas-movilidad-marcha/
 - Catalan: https://onmedic.com/ca/insights/metriques-mobilitat-marxa/
+
+Apple Watch hypertension notifications article:
+https://onmedic.com/insights/apple-watch-hypertension-notifications/
+
+Explains how the 30-day optical screening works, Apple's validation results (41% overall sensitivity, 92% specificity) and why the absence of an alert is not evidence of normal blood pressure.
+
+Translations:
+- Spanish: https://onmedic.com/es/insights/avisos-hipertension-apple-watch/
+- Catalan: https://onmedic.com/ca/insights/avisos-hipertensio-apple-watch/
+
+Apple Watch Readiness score article:
+https://onmedic.com/insights/apple-watch-readiness-score/
+
+Explains the 0–10 Readiness score introduced with Apple Watch Series 12 and Ultra 4 in September 2026: its activity, vitals and sleep inputs, the four bands (Recover 0–1, Pace Yourself 2–4, Ready 5–7, Go For It 8–10), the setup requirements behind a "no data" score, why it changes during the day, and the absence so far of independent validation.
+
+Translations:
+- Spanish: https://onmedic.com/es/insights/puntuacion-readiness-apple-watch/
+- Catalan: https://onmedic.com/ca/insights/puntuacio-readiness-apple-watch/
 
 ## Trust and safety
 
