@@ -9,31 +9,27 @@ Through-line: privacy-first / on-device by design.
 
 ## Key pages
 
-- Home: https://onmedic.com/
-- What we build (services): https://onmedic.com/#institutions
-- Products we ship: https://onmedic.com/products/
-- About the studio (ArnoHealth S.L., founder Albert Arnó): https://onmedic.com/about/
-- Contact: https://onmedic.com/contact/
-- Insights index (en/es/ca): https://onmedic.com/insights/ · https://onmedic.com/es/insights/ · https://onmedic.com/ca/insights/
-- Editorial insight — walking mobility metrics: https://onmedic.com/insights/walking-mobility-metrics/
-- Editorial insight in Spanish: https://onmedic.com/es/insights/metricas-movilidad-marcha/
-- Editorial insight in Catalan: https://onmedic.com/ca/insights/metriques-mobilitat-marxa/
-- Editorial insight — Apple Watch hypertension notifications: https://onmedic.com/insights/apple-watch-hypertension-notifications/
-- Editorial insight in Spanish: https://onmedic.com/es/insights/avisos-hipertension-apple-watch/
-- Editorial insight in Catalan: https://onmedic.com/ca/insights/avisos-hipertensio-apple-watch/
-- Editorial insight — Apple Watch Readiness score (0–10, models, no data): https://onmedic.com/insights/apple-watch-readiness-score/
-- Editorial insight in Spanish: https://onmedic.com/es/insights/puntuacion-readiness-apple-watch/
-- Editorial insight in Catalan: https://onmedic.com/ca/insights/puntuacio-readiness-apple-watch/
-- Mobile App Legal Policies (Generic Terms & Privacy): https://onmedic.com/terms-privacy-generics/
-  - Local Apps Terms of Use: https://onmedic.com/apps/local-terms/
-  - Local Apps Privacy Policy: https://onmedic.com/apps/local-privacy/
-  - Online Apps Terms of Use: https://onmedic.com/apps/online-terms/
-  - Online Apps Privacy Policy: https://onmedic.com/apps/online-privacy/
+- [Home](https://onmedic.com/): Main studio overview
+- [What we build](https://onmedic.com/#institutions): Services for hospitals, research centers and pharma
+- [Products we ship](https://onmedic.com/products/): Privacy-first medical and sports apps
+- [About the studio](https://onmedic.com/about/): ArnoHealth S.L., founder Albert Arnó
+- [Contact](https://onmedic.com/contact/): Contact details
+- [Insights (EN)](https://onmedic.com/insights/) · [ES](https://onmedic.com/es/insights/) · [CA](https://onmedic.com/ca/insights/): Editorial articles
+- [Walking mobility metrics (EN)](https://onmedic.com/insights/walking-mobility-metrics/) · [ES](https://onmedic.com/es/insights/metricas-movilidad-marcha/) · [CA](https://onmedic.com/ca/insights/metriques-mobilitat-marxa/)
+- [Apple Watch hypertension notifications (EN)](https://onmedic.com/insights/apple-watch-hypertension-notifications/) · [ES](https://onmedic.com/es/insights/avisos-hipertension-apple-watch/) · [CA](https://onmedic.com/ca/insights/avisos-hipertensio-apple-watch/)
+- [Apple Watch Readiness score (EN)](https://onmedic.com/insights/apple-watch-readiness-score/) · [ES](https://onmedic.com/es/insights/puntuacion-readiness-apple-watch/) · [CA](https://onmedic.com/ca/insights/puntuacio-readiness-apple-watch/)
+- [Mobile App Legal Policies](https://onmedic.com/terms-privacy-generics/): Generic Terms & Privacy
+  - [Local Apps Terms of Use](https://onmedic.com/apps/local-terms/)
+  - [Local Apps Privacy Policy](https://onmedic.com/apps/local-privacy/)
+  - [Online Apps Terms of Use](https://onmedic.com/apps/online-terms/)
+  - [Online Apps Privacy Policy](https://onmedic.com/apps/online-privacy/)
 
 ## Product line (ships its own products)
 
-- Sports analytics — AnalyticsZone (Swim, Run, Bike, Hike, Walk, SwimTrainer): https://analyticszone.app
-- Medical apps: Pelvisana (https://www.pelvisana.com), DiAlgo, family messages for older and dependent people (https://dialgo.net/), CardioAnalytics, Health Analytics, Sleep Analytics
+- [AnalyticsZone](https://analyticszone.app): Sports analytics (Swim, Run, Bike, Hike, Walk, SwimTrainer)
+- [Pelvisana](https://www.pelvisana.com): Pelvic floor education app
+- [DiAlgo](https://dialgo.net/): Family messages for older and dependent people
+- [DoctorMi](https://doctormi.net/): Secure non-urgent clinical communication
 
 ## Entity
 
